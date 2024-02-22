@@ -1,0 +1,17 @@
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Business.deps.json
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Business.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Business.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.csproj.AssemblyReference.cache
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.AssemblyInfoInputs.cache
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.AssemblyInfo.cs
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\refint\ActuArte.Business.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ref\ActuArte.Business.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Data.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Models.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Models.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Data.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.csproj.CopyComplete

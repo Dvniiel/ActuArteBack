@@ -1,0 +1,17 @@
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\bin\Debug\net7.0\ActuArte.Data.deps.json
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\bin\Debug\net7.0\ActuArte.Data.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\bin\Debug\net7.0\ActuArte.Data.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.csproj.AssemblyReference.cache
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.AssemblyInfoInputs.cache
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.AssemblyInfo.cs
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\refint\ActuArte.Data.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ref\ActuArte.Data.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\bin\Debug\net7.0\ActuArte.Data.runtimeconfig.json
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\bin\Debug\net7.0\ActuArte.Models.dll
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\bin\Debug\net7.0\ActuArte.Models.pdb
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.csproj.CopyComplete
+D:\Nueva carpeta\Nueva carpeta\ActuArte\Data\obj\Debug\net7.0\ActuArte.Data.genruntimeconfig.cache
