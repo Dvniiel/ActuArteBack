@@ -12,6 +12,11 @@ namespace ActuArte.Business
             _obraRepository = obrasRepository;
         }
         public List<Obras> GetAll() => _obraRepository.GetAll();
+        public Obras Get(int Id) => _obraRepository.Get(Id);
+        public void Add(Obras obras) => _obraRepository.Add(obras);
 
+        public void Delete(int Id) => _obraRepository.Delete(Id);
+
+        public void Update(Obras obras) => _obraRepository.Update(obras);
     }
 }

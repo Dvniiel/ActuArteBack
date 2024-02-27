@@ -4142,6 +4142,7 @@
   "projectFileDependencyGroups": {
     "net7.0": [
       "ActuArte.Business >= 1.0.0",
+      "ActuArte.Data >= 1.0.0",
       "ActuArte.Models >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.7",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
@@ -4183,6 +4184,9 @@
           "projectReferences": {
             "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Business\\ActuArte.Business.csproj": {
               "projectPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Business\\ActuArte.Business.csproj"
+            },
+            "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj": {
+              "projectPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj"
             },
             "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj": {
               "projectPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj"

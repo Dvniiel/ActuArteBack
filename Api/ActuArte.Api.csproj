@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Business\ActuArte.Business.csproj" />
     <ProjectReference Include="..\Models\ActuArte.Models.csproj" />
+    <ProjectReference Include="..\Data\ActuArte.Data.csproj" />
   </ItemGroup>
 
 </Project>

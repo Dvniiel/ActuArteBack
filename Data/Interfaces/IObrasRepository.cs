@@ -8,6 +8,8 @@ namespace ActuArte.Data
         List<Obras> GetAll();
 
         Obras Get(int Id);
+        void Add(Obras obras);
+        void Delete(int Id);
 
         void Update(Obras obras);
     }

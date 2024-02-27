@@ -22,7 +22,8 @@ namespace ActuArte.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Obras>().HasData(
-                new Obras{
+                new Obras
+                {
                     idObra = 1,
                     nombreObra = "Romeo y Julieta",
                     descObra = "La excelente y lamentable tragedia de Romeo y Julieta cuenta la historia de dos jóvenes enamorados, Romeo y Julieta, quienes pertenecen a dos familias poderosas y enemigas de la ciudad renacentista de Verona, Italia: los Montesco y los Capuleto. Los protagonistas se conocen en un baile familiar de los Capuleto, en el que Romeo y sus amigos se cuelan, a pesar del peligro que corren y de que el rey de la ciudad ha decretado una frágil tregua entre las familias. Y tan pronto como bailan, Romeo y Julieta quedan perdidamente enamorados el uno del otro.",
@@ -32,7 +33,8 @@ namespace ActuArte.Data
                     directorObra = "Franco Zeffirelli",
                     duracionObra = 90
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 2,
                     nombreObra = "La Casa de Bernarda Alba",
                     descObra = "Tras la muerte de su segundo esposo, Bernarda Alba se recluye e impone un luto riguroso y asfixiante por ocho años, prohibiendo a sus cinco hijas a que vayan a la fiesta. Cuando Angustias, la primogénita y la única hija del primer marido, hereda una fortuna, atrae a un pretendiente, Pepe el Romano.",
@@ -42,7 +44,8 @@ namespace ActuArte.Data
                     directorObra = "Alfredo Sanzol",
                     duracionObra = 60
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 3,
                     nombreObra = "La Celestina",
                     descObra = "La loca pasión por Melibea, hija de un rico mercader, lleva al joven Calisto a romper todas las barreras y a aliarse con una vieja alcahueta. Desde el momento en que entra en escena, Celestina avasalla toda la obra hasta convertirse en un personaje literario de fama universal.",
@@ -52,7 +55,8 @@ namespace ActuArte.Data
                     directorObra = "Antonio Castro Guijosa",
                     duracionObra = 60
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 4,
                     nombreObra = "La Vida es Sueño",
                     descObra = "El rey Basilio va a tener un hijo. Pero un adivino le dice que ese nacimiento traerá el desastre al reino. En efecto, nada más nacer la madre muere, y el rey, asustado encierra a su hijo en una torre escondida entre montañas de forma que nadie sepa donde está. Solo Clotaldo, su ayo, conoce su paradero.",
@@ -62,7 +66,8 @@ namespace ActuArte.Data
                     directorObra = "Declan Deonnellan",
                     duracionObra = 100
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 5,
                     nombreObra = "Hamlet",
                     descObra = "La tragedia de Hamlet, Príncipe de Dinamarca cuenta la historia del joven heredero al trono danés, cuyo padre muerto se le aparece como un fantasma en las murallas del castillo, para invocar su venganza, pues su muerte no fue natural sino que fue envenenado por su propia esposa Gertrudis, madre de Hamlet, y su hermano y actual rey, Claudio.",
@@ -72,7 +77,8 @@ namespace ActuArte.Data
                     directorObra = "Miguel del Arco",
                     duracionObra = 95
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 6,
                     nombreObra = "El Fantasma de la Ópera",
                     descObra = "Misterio y amor en las catacumbas de París. En los sótanos de la Ópera de París se esconde un misterioso personaje que oculta su rostro desfigurado. Este ser acecha por los camerinos y vigila a Christine, una inocente muchacha con gran talento de la que se ha enamorado. A través de un tenebroso y cruel personaje, Erik, atormentado por la deformidad de su rostro y su pasión por la belleza, y de los recovecos de un edificio, la Ópera de París, Leroux nos introduce en el mundo del otro lado del telón.",
@@ -82,7 +88,8 @@ namespace ActuArte.Data
                     directorObra = "Federico Bellone",
                     duracionObra = 150
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 7,
                     nombreObra = "Sueño de una Noche de Verano",
                     descObra = "Narra los hechos que suceden durante el casamiento de Teseo, duque de Atenas, con Hipólita, reina de las amazonas. Incluye las aventuras de cuatro amantes atenienses y un grupo de seis actores aficionados que son controlados por las hadas que habitan en el bosque donde la mayor parte de la obra tiene lugar.",
@@ -92,7 +99,8 @@ namespace ActuArte.Data
                     directorObra = "Marco Carniti",
                     duracionObra = 90
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 8,
                     nombreObra = "Don Juan Tenorio",
                     descObra = "Don Juan Tenorio es el personaje más célebre del teatro español. La historia de este burlador de mujeres comienza en los días de Carnaval y acaba en el Día de Difuntos. Don Juan es un seductor que se mofa de todos los valores sociales establecidos. Pero su vida cambiará al conocer a doña Inés. Gracias a su amor, el alma de don Juan se salvará de las llamas del infierno.",
@@ -102,7 +110,8 @@ namespace ActuArte.Data
                     directorObra = "Pedro Amalio Lopez",
                     duracionObra = 100
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 9,
                     nombreObra = "Fuenteovejuna",
                     descObra = "El pueblo de Fuente Ovejuna, ya está harto de la crueldad de su señor, que no hace más que fastidiarlos, ya sea reclutando jóvenes para sus guerras, o deshonrando a sus mujeres, y esta es la gota que colma el vaso de su paciencia, así que deciden intervenir y matar al Comendador.",
@@ -112,7 +121,8 @@ namespace ActuArte.Data
                     directorObra = "Adolfo Marsillat",
                     duracionObra = 90
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 10,
                     nombreObra = "La Divina Comedia",
                     descObra = "Es una obra humana que refleja el peregrinaje del ser humano en busca de “la Luz”, es el descubrimiento del hombre hacia Dios, con la ayuda de la razón (Virgilio) y de la fe (Beatriz). El poema es una epopeya religiosa que narra con realismo un viaje, es un canto a la humanidad.",
@@ -122,7 +132,8 @@ namespace ActuArte.Data
                     directorObra = "Dante",
                     duracionObra = 110
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 11,
                     nombreObra = "El enfermo imaginario",
                     descObra = "Argán se cree muy enfermo y no puede vivir sin estar rodeado de médicos. Para conseguir tener uno en su familia que le haga ahorrar la ingente cantidad de dinero que destina a sus curas, medicamentos y potingues, no duda en concertar un matrimonio de conveniencia entre su hija Angélica con el hijo del doctor Diafoirus.",
@@ -132,7 +143,8 @@ namespace ActuArte.Data
                     directorObra = "Eva del Palacio",
                     duracionObra = 70
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 12,
                     nombreObra = "Cats",
                     descObra = "Esta obra musical es una de las más célebres de Broadway. Fue creada por el legendario Andrew Lloyd Weber, quien a su vez se basó en los poemas de T. S. Eliot, «El libro de los gatos habilidosos del viejo Possum». Relata la historia de los Jellicle Cats, un grupo de gatos callejeros que poco a poco se va presentando ante el público, en medio de impresionantes números musicales.",
@@ -142,7 +154,8 @@ namespace ActuArte.Data
                     directorObra = "Trevor Nunn",
                     duracionObra = 120
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 13,
                     nombreObra = "Wicked",
                     descObra = "Narra la historia de Elphaba, una niña nacida de color verde y cómo se convierte en la Malvada Bruja del Oeste, pasando por los sucesos que experimenta desde su nacimiento, infancia y juventud en la Universidad de Shiz hasta llegar a la edad adulta, momento de la llegada de Dorothy a la tierra de Oz.",
@@ -152,7 +165,8 @@ namespace ActuArte.Data
                     directorObra = "Joe Mantello",
                     duracionObra = 165
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 14,
                     nombreObra = "Los Miserables",
                     descObra = "Es la historia de Jean Valjean, un convicto que estuvo injustamente encarcelado por 19 años por haberse robado una rebanada de pan. Al ser liberado de su injusta condena, Valjean trata de escapar de su pasado, lleno de maldad y depravación, para vivir una vida digna y honesta.",
@@ -162,7 +176,8 @@ namespace ActuArte.Data
                     directorObra = "David White",
                     duracionObra = 210
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 15,
                     nombreObra = "Casa de Muñecas",
                     descObra = "En Casa de muñecas Ibsen aborda el problema de la situación de la mujer de la pequeña burguesía en la sociedad de su tiempo. Nora, la protagonista, es el retrato de las mujeres de su clase y puede ofrecer un retrato con mucha actualidad para las mujeres inmersas en la vorágine del mundo contemporáneo.",
@@ -172,7 +187,8 @@ namespace ActuArte.Data
                     directorObra = "Franco Zeffirelli",
                     duracionObra = 100
                 },
-                new Obras{
+                new Obras
+                {
                     idObra = 16,
                     nombreObra = "El alcalde de Zalamea",
                     descObra = "En el alcalde de Zalamea, se cuenta la venganza del Alcalde Pedro Crespo, que da muerte a don Álvaro, el arrogante capitán que ha secuestrado a su hija. Esta reacción no se percibe como el resultado de aplicar un código rígido y bárbaro, sino como una reacción justa que será aprobada por el rey.",
@@ -182,8 +198,35 @@ namespace ActuArte.Data
                     directorObra = "Miguel Nieto",
                     duracionObra = 90
                 }
-                
+
                 );
+
+            modelBuilder.Entity<Usuarios>().HasData(
+                            new Usuarios
+                            {
+                                idUsuario = 1,
+                                nombreUsuario = "admin",
+                                passwordUsuario = "admin"
+                            },
+                            new Usuarios
+                            {
+                                idUsuario = 2,
+                                nombreUsuario = "admin2",
+                                passwordUsuario = "admin"
+                            },
+                            new Usuarios
+                            {
+                                idUsuario = 3,
+                                nombreUsuario = "admin3",
+                                passwordUsuario = "admin"
+                            },
+                            new Usuarios
+                            {
+                                idUsuario = 4,
+                                nombreUsuario = "admin4",
+                                passwordUsuario = "admin"
+                            }
+            );
         }
     }
 }

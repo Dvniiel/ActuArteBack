@@ -9,6 +9,7 @@
       "ActuArte.Api/1.0.0": {
         "dependencies": {
           "ActuArte.Business": "1.0.0",
+          "ActuArte.Data": "1.0.0",
           "ActuArte.Models": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.7",
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",

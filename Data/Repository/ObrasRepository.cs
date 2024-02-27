@@ -40,11 +40,15 @@ namespace ActuArte.Data
         }
 
 
-        public void Delete(int id)
+        public void Delete(int Id)
         {
-            var obras = _context.Obras.FirstOrDefault(obras => obras.idObra == id);
+            var exist = _context.Obras.Any(obras => obras.idObra == Id);
+            if (exist != null)
+            {
+            var obras = _context.Obras.FirstOrDefault(obras => obras.idObra == Id);
             _context.Obras.Remove(obras);
             _context.SaveChanges();
+            }
         }
 
     }

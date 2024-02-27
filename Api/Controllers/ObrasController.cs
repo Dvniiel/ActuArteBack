@@ -20,27 +20,27 @@ namespace ActuArte.Controllers
         // GET: /Obras
         [HttpGet]
         public ActionResult<List<Obras>> GetAll() => _obraService.GetAll();
-/*
 
-        [HttpGet("{id}")]
-        public ActionResult<Obras> Get(int id)
+
+        [HttpGet("{Id}")]
+        public ActionResult<Obras> Get(int Id)
         {
-            var obra = _obraService.Get(id);
+            var obras = _obraService.Get(Id);
 
-            if (obra == null)
+            if (obras == null)
                 return NotFound();
 
-            return obra;
+            return obras;
         }
 
 
-        [HttpPut("{id}")]
-        public IActionResult Update(int id, Obras obra)
+        [HttpPut("{Id}")]
+        public IActionResult Update(int Id, Obras obras)
         {
-            if (id != obra.idObra)
+            if (Id != obras.idObra)
                 return BadRequest();
 
-            var existingObra = _obraService.Get(id);
+            var existingObra = _obraService.Get(Id);
             if (existingObra is null)
                 return NotFound();
 
@@ -50,7 +50,7 @@ namespace ActuArte.Controllers
         }
 
 
-        
+
         [HttpPost]
         public ActionResult<Obras> Create(Obras obra)
         {
@@ -61,8 +61,24 @@ namespace ActuArte.Controllers
             }
 
             _obraService.Add(obra);
-            return CreatedAtAction(nameof(Create), new { id = obra.idObra }, obra);
+            return CreatedAtAction(nameof(Create), new { Id = obra.idObra }, obra);
+
         }
-*/
+
+
+
+        [HttpDelete("{Id}")]
+        public IActionResult Delete(int Id)
+        {
+            var obras = _obraService.Get(Id);
+
+            if (obras is null)
+                return NotFound();
+
+            _obraService.Delete(Id);
+
+            return NoContent();
+        }
+
     }
 }

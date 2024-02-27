@@ -1,6 +1,5 @@
 using ActuArte.Models;
 using ActuArte.Data;
-
 namespace ActuArte.Business
 {
     public class AsientosService

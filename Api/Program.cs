@@ -29,9 +29,15 @@ builder.Services.AddScoped<ObrasService>();
 builder.Services.AddScoped<ObrasService>();
 builder.Services.AddScoped<IObrasRepository, ObrasRepository>();
 
+// USUARIOS
+builder.Services.AddScoped<UsuariosService>();
+builder.Services.AddScoped<IUsuariosRepository, UsuariosRepository>();
+
 // ASIENTOS
 builder.Services.AddScoped<AsientosService>();
 builder.Services.AddScoped<IAsientosRepository, AsientosRepository>();
+
+
 
 var app = builder.Build();
 
