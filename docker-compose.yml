@@ -8,6 +8,7 @@ volumes:
         driver: local      
  
 services:
+
     db:
         #container_name: dbContainer
         image: mcr.microsoft.com/mssql/server:2019-CU21-ubuntu-20.04
@@ -34,6 +35,16 @@ services:
             - db
         environment:
             - DOCKER_CONTAINER=true
+
+    web:
+        container_name: webContainer
+        image: p1
+        ports:
+            - "9000:80"
+        depends_on:
+            - api
+        networks:
+            - backend
 
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "88DbGrbfRdm6GJMt9BdmLoETNmW28lFkf1f5BE3C9ON7ybtzes17mgJ8r3H6nHCFV2BABoxjelEaFxZNIRBDoA==",
+  "dgSpecHash": "7PScSLeRJLxTtFLxtrmSQdmVwGLzHrjwM9JZ8np7jLamUw2VT85iSg27QeiXTG9umdqvmjZ5E+nxnHcz5cVarg==",
   "success": true,
-  "projectFilePath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Business\\ActuArte.Business.csproj",
+  "projectFilePath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Business\\ActuArte.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\S2-PC00\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\S2-PC00\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

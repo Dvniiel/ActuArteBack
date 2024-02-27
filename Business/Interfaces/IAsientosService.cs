@@ -7,7 +7,7 @@ namespace ActuArte.Business
     public interface IAsientosService
     {
         List<Asientos> GetAll();
-         Asientos? Get(int Id);
+        Asientos? Get(int Id);
         
         void Update(Asientos asientos);
 

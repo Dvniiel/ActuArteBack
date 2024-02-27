@@ -15,3 +15,20 @@ D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Model
 D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Models.pdb
 D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\bin\Debug\net7.0\ActuArte.Data.pdb
 D:\Nueva carpeta\Nueva carpeta\ActuArte\Business\obj\Debug\net7.0\ActuArte.Business.csproj.CopyComplete
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Business.deps.json
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Business.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Business.pdb
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Data.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Models.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Models.pdb
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\bin\Debug\net7.0\ActuArte.Data.pdb
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.csproj.AssemblyReference.cache
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.AssemblyInfoInputs.cache
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.AssemblyInfo.cs
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.csproj.CoreCompileInputs.cache
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.csproj.CopyComplete
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\refint\ActuArte.Business.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ActuArte.Business.pdb
+C:\Users\S2-PC00\Desktop\ActuArteBack\Business\obj\Debug\net7.0\ref\ActuArte.Business.dll

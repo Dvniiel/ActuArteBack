@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj": {}
+    "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj": {}
   },
   "projects": {
-    "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj": {
+    "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj",
+        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj",
         "projectName": "ActuArte.Data",
-        "projectPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj",
+        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\obj\\",
+        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj": {
-                "projectPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj"
+              "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj": {
+                "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj": {
+    "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj",
+        "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj",
         "projectName": "ActuArte.Models",
-        "projectPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\ActuArte.Models.csproj",
+        "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Models\\obj\\",
+        "outputPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

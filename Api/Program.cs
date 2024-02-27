@@ -25,15 +25,15 @@ builder.Services.AddDbContext<ActuArteContext>(options =>
 
 builder.Services.AddScoped<ObrasService>();
 
-// OBRAS
+// OBRAS :(
 builder.Services.AddScoped<ObrasService>();
 builder.Services.AddScoped<IObrasRepository, ObrasRepository>();
 
-// USUARIOS
+// USUARIOUUS
 builder.Services.AddScoped<UsuariosService>();
 builder.Services.AddScoped<IUsuariosRepository, UsuariosRepository>();
 
-// ASIENTOS
+// ASIENTOUUS
 builder.Services.AddScoped<AsientosService>();
 builder.Services.AddScoped<IAsientosRepository, AsientosRepository>();
 

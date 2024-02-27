@@ -10,3 +10,15 @@ D:\Nueva carpeta\Nueva carpeta\ActuArte\Models\obj\Debug\net7.0\ActuArte.Models.
 D:\Nueva carpeta\Nueva carpeta\ActuArte\Models\obj\Debug\net7.0\refint\ActuArte.Models.dll
 D:\Nueva carpeta\Nueva carpeta\ActuArte\Models\obj\Debug\net7.0\ActuArte.Models.pdb
 D:\Nueva carpeta\Nueva carpeta\ActuArte\Models\obj\Debug\net7.0\ref\ActuArte.Models.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\bin\Debug\net7.0\ActuArte.Models.deps.json
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\bin\Debug\net7.0\ActuArte.Models.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\bin\Debug\net7.0\ActuArte.Models.pdb
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.csproj.AssemblyReference.cache
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.AssemblyInfoInputs.cache
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.AssemblyInfo.cs
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.csproj.CoreCompileInputs.cache
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\refint\ActuArte.Models.dll
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.pdb
+C:\Users\S2-PC00\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ref\ActuArte.Models.dll

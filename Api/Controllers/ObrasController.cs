@@ -52,7 +52,7 @@ namespace ActuArte.Controllers
 
 
         [HttpPost]
-        public ActionResult<Obras> Create(Obras obra)
+        public ActionResult<ObrasDTO> Create(Obras obra)
         {
             var existeObra = _obraService.Get(obra.idObra);
             if (existeObra != null)

@@ -55,7 +55,7 @@ namespace ActuArte.Controllers
 
 
         [HttpPost]
-        public ActionResult<Usuarios> Create(Usuarios usuario)
+        public ActionResult<UsuariosDTO> Create(Usuarios usuario)
         {
             var existeUser = _usuarioService.Get(usuario.idUsuario);
             if (existeUser != null)

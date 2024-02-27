@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JAUO8wU4tmHPu1xnba+QW8d7M+YjDd/dcnYJJ3GKTQ/51S9cRvCzQ646Fxg3dNhfKuZ0VZbbtbYbI31cQ9a7tg==",
+  "dgSpecHash": "UmG7BElrRB4/yvBb90PVbF9mbLN/bwrEE6pujGA8pta/2Tcm7l3NK0bmuxbXpKNQIbHMB083Misqx0ROX42IzQ==",
   "success": true,
-  "projectFilePath": "D:\\Nueva carpeta\\Nueva carpeta\\ActuArte\\Data\\ActuArte.Data.csproj",
+  "projectFilePath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\S2-PC00\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\S2-PC00\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
