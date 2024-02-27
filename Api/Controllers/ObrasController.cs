@@ -44,7 +44,7 @@ namespace ActuArte.Controllers
             if (existingObra is null)
                 return NotFound();
 
-
+            _obraService.Update(obras);
 
             return NoContent();
         }

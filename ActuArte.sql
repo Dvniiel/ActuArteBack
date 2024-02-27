@@ -32,6 +32,36 @@ CREATE TABLE Asientos (
 );
 GO
 
+-- Creación de la tabla 'Usuarios'
+CREATE TABLE Usuarios (
+    idUsuario INT PRIMARY KEY IDENTITY,
+    nombreUsuario NVARCHAR(255) NOT NULL,
+    passwordUsuario NVARCHAR(255) NOT NULL,
+);
+GO
+
+INSERT INTO Usuarios(idUsuario, nombreUsuario, passwordUsuario)
+VALUES
+(
+    1,
+    'admin',
+    'admin'
+),
+(
+    2,
+    'admin2',
+    'admin'
+),
+(
+    3,
+    'admin3',
+    'admin'
+),
+(
+    4,
+    'admin4',
+    'admin'
+),
 
 
 

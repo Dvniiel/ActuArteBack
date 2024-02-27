@@ -2,14 +2,17 @@ using ActuArte.Models;
 using ActuArte.Data;
 namespace ActuArte.Business
 {
-    public class AsientosService
+    public class AsientosService : IAsientosRepository
     {
-        private readonly ActuArteContext _context;
+        private readonly IAsientosRepository _asientoRepository;
 
-        public AsientosService(ActuArteContext context)
+        public AsientosService(IAsientosRepository asientosRepository)
         {
-            _context = context;
+            _asientoRepository = asientosRepository;
         }
+        public List<Asientos> GetAll() => _asientoRepository.GetAll();
+         public Asientos Get(int Id) => _asientoRepository.Get(Id);
 
+        public void Update(Asientos asientos) => _asientoRepository.Update(asientos);
     }
 }

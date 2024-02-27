@@ -12,7 +12,7 @@ namespace ActuArte.Models;
         public int idAsiento { get; set; }
 
         [Required]
-        public bool isOcuppied { get; set; }
+        public bool estaOcupado { get; set; }
 
 
     }

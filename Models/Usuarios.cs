@@ -5,7 +5,8 @@ namespace ActuArte.Models;
 
     public class Usuarios
     {
-        public Usuarios(){}
+        public Usuarios()
+        {}
 
         [Key]
         public int idUsuario { get; set; }

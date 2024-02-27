@@ -9,5 +9,8 @@ namespace ActuArte.Business
         List<Usuarios> GetAll();
         
         Usuarios? Get(int Id);
+         void Update(Usuarios usuarios);
+        void Add(Usuarios usuarios);
+        void Delete(int id);
     }
 }

@@ -29,12 +29,284 @@ namespace ActuArte.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idAsiento"));
 
-                    b.Property<bool>("isOcuppied")
+                    b.Property<bool>("estaOcupado")
                         .HasColumnType("bit");
 
                     b.HasKey("idAsiento");
 
                     b.ToTable("Asientos");
+
+                    b.HasData(
+                        new
+                        {
+                            idAsiento = 1,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 2,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 3,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 4,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 5,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 6,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 7,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 8,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 9,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 10,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 11,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 12,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 13,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 14,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 15,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 16,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 17,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 18,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 19,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 20,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 21,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 22,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 23,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 24,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 25,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 26,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 27,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 28,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 29,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 30,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 31,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 32,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 33,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 34,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 35,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 36,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 37,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 38,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 39,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 40,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 41,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 42,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 43,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 44,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 45,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 46,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 47,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 48,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 49,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 50,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 51,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 52,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 53,
+                            estaOcupado = false
+                        },
+                        new
+                        {
+                            idAsiento = 54,
+                            estaOcupado = false
+                        });
                 });
 
             modelBuilder.Entity("ActuArte.Models.Obras", b =>
@@ -269,6 +541,32 @@ namespace ActuArte.Data.Migrations
                     b.HasKey("idUsuario");
 
                     b.ToTable("Usuarios");
+
+                    b.HasData(
+                        new
+                        {
+                            idUsuario = 1,
+                            nombreUsuario = "admin",
+                            passwordUsuario = "admin"
+                        },
+                        new
+                        {
+                            idUsuario = 2,
+                            nombreUsuario = "admin2",
+                            passwordUsuario = "admin"
+                        },
+                        new
+                        {
+                            idUsuario = 3,
+                            nombreUsuario = "admin3",
+                            passwordUsuario = "admin"
+                        },
+                        new
+                        {
+                            idUsuario = 4,
+                            nombreUsuario = "admin4",
+                            passwordUsuario = "admin"
+                        });
                 });
 #pragma warning restore 612, 618
         }

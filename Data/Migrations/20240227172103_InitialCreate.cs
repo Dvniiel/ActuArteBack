@@ -18,7 +18,7 @@ namespace ActuArte.Data.Migrations
                 {
                     idAsiento = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    isOcuppied = table.Column<bool>(type: "bit", nullable: false)
+                    estaOcupado = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -59,6 +59,67 @@ namespace ActuArte.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
+                table: "Asientos",
+                columns: new[] { "idAsiento", "estaOcupado" },
+                values: new object[,]
+                {
+                    { 1, false },
+                    { 2, false },
+                    { 3, false },
+                    { 4, false },
+                    { 5, false },
+                    { 6, false },
+                    { 7, false },
+                    { 8, false },
+                    { 9, false },
+                    { 10, false },
+                    { 11, false },
+                    { 12, false },
+                    { 13, false },
+                    { 14, false },
+                    { 15, false },
+                    { 16, false },
+                    { 17, false },
+                    { 18, false },
+                    { 19, false },
+                    { 20, false },
+                    { 21, false },
+                    { 22, false },
+                    { 23, false },
+                    { 24, false },
+                    { 25, false },
+                    { 26, false },
+                    { 27, false },
+                    { 28, false },
+                    { 29, false },
+                    { 30, false },
+                    { 31, false },
+                    { 32, false },
+                    { 33, false },
+                    { 34, false },
+                    { 35, false },
+                    { 36, false },
+                    { 37, false },
+                    { 38, false },
+                    { 39, false },
+                    { 40, false },
+                    { 41, false },
+                    { 42, false },
+                    { 43, false },
+                    { 44, false },
+                    { 45, false },
+                    { 46, false },
+                    { 47, false },
+                    { 48, false },
+                    { 49, false },
+                    { 50, false },
+                    { 51, false },
+                    { 52, false },
+                    { 53, false },
+                    { 54, false }
+                });
+
+            migrationBuilder.InsertData(
                 table: "Obras",
                 columns: new[] { "idObra", "autorObra", "descObra", "directorObra", "duracionObra", "imagen", "nombreObra", "valoracionObra" },
                 values: new object[,]
@@ -79,6 +140,17 @@ namespace ActuArte.Data.Migrations
                     { 14, "Miguel del Arco y Gemma Castaño", "Es la historia de Jean Valjean, un convicto que estuvo injustamente encarcelado por 19 años por haberse robado una rebanada de pan. Al ser liberado de su injusta condena, Valjean trata de escapar de su pasado, lleno de maldad y depravación, para vivir una vida digna y honesta.", "David White", 210, "https://m.media-amazon.com/images/I/517Cb2FS4qL.jpg", "Los Miserables", 4.7999999999999998 },
                     { 15, " Nayra Calvo y Miguel A.Luengo", "En Casa de muñecas Ibsen aborda el problema de la situación de la mujer de la pequeña burguesía en la sociedad de su tiempo. Nora, la protagonista, es el retrato de las mujeres de su clase y puede ofrecer un retrato con mucha actualidad para las mujeres inmersas en la vorágine del mundo contemporáneo.", "Franco Zeffirelli", 100, "https://images.cdn3.buscalibre.com/fit-in/360x360/ef/99/ef9995dc7f336bc670c2775b7316b143.jpg", "Casa de Muñecas", 4.5999999999999996 },
                     { 16, " Carmelo Gomez y Joaquin Notario", "En el alcalde de Zalamea, se cuenta la venganza del Alcalde Pedro Crespo, que da muerte a don Álvaro, el arrogante capitán que ha secuestrado a su hija. Esta reacción no se percibe como el resultado de aplicar un código rígido y bárbaro, sino como una reacción justa que será aprobada por el rey.", "Miguel Nieto", 90, "https://m.media-amazon.com/images/I/51fM26seM-L.jpg", "El alcalde de Zalamea", 4.0999999999999996 }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Usuarios",
+                columns: new[] { "idUsuario", "nombreUsuario", "passwordUsuario" },
+                values: new object[,]
+                {
+                    { 1, "admin", "admin" },
+                    { 2, "admin2", "admin" },
+                    { 3, "admin3", "admin" },
+                    { 4, "admin4", "admin" }
                 });
         }
 

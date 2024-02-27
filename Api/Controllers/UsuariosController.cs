@@ -34,5 +34,54 @@ namespace ActuArte.Controllers
 
             return usuarios;
         }
+
+
+
+        [HttpPut("{Id}")]
+        public IActionResult Update(int Id, Usuarios usuarios)
+        {
+            if (Id != usuarios.idUsuario)
+                return BadRequest();
+
+            var existingUser = _usuarioService.Get(Id);
+            if (existingUser is null)
+                return NotFound();
+
+            _usuarioService.Update(usuarios);
+
+            return NoContent();
+        }
+
+
+
+        [HttpPost]
+        public ActionResult<Usuarios> Create(Usuarios usuario)
+        {
+            var existeUser = _usuarioService.Get(usuario.idUsuario);
+            if (existeUser != null)
+            {
+                return BadRequest($"Una obra con el ID {usuario.idUsuario} ya existe.");
+            }
+
+            _usuarioService.Add(usuario);
+            return CreatedAtAction(nameof(Create), new { Id = usuario.idUsuario }, usuario);
+
+        }
+
+
+
+        [HttpDelete("{Id}")]
+        public IActionResult Delete(int Id)
+        {
+            var usuario = _usuarioService.Get(Id);
+
+            if (usuario is null)
+                return NotFound();
+
+            _usuarioService.Delete(Id);
+
+            return NoContent();
+        }
+
     }
 }

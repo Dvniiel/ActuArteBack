@@ -20,9 +20,34 @@ namespace ActuArte.Data
             return _context.Usuarios.ToList();
 
         }
-         public Usuarios Get(int Id)
+         public Usuarios Get(int id)
         {
-            return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.idUsuario == Id);
+            return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.idUsuario == id);
+        }
+        public void Add(Usuarios usuarios)
+        {
+            _context.Usuarios.Add(usuarios);
+            _context.SaveChanges();
+        }
+
+        public void Update(Usuarios usuarios)
+        {
+
+            _context.Entry(usuarios).State = EntityState.Modified;
+            _context.SaveChanges();
+
+        }
+
+
+        public void Delete(int Id)
+        {
+            var exist = _context.Usuarios.Any(usuarios => usuarios.idUsuario == Id);
+            if (exist != null)
+            {
+            var usuarios = _context.Usuarios.FirstOrDefault(usuarios => usuarios.idUsuario == Id);
+            _context.Usuarios.Remove(usuarios);
+            _context.SaveChanges();
+            }
         }
     }
 }
