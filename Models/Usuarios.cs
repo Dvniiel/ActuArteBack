@@ -3,21 +3,21 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ActuArte.Models;
 
-    public class Usuarios
-    {
-        public Usuarios()
-        {}
+public class Usuarios
+{
+    public Usuarios()
+    { }
 
-        [Key]
-        public int idUsuario { get; set; }
+    [Key]
+    public int idUsuario { get; set; }
 
-        [Required]
-        public string? nombreUsuario { get; set; }
+    [Required]
+    public string? nombreUsuario { get; set; }
 
-        [Required]
-        public string? passwordUsuario { get; set; }
+    [Required]
+    public string? passwordUsuario { get; set; }
 
-    }
+}
 
 
 

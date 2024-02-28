@@ -20,7 +20,7 @@ namespace ActuArte.Data
 
             return _context.Asientos.ToList();
         }
-          public Asientos Get(int id)
+        public Asientos Get(int id)
         {
             return _context.Asientos.AsNoTracking().FirstOrDefault(asientos => asientos.idAsiento == id);
         }

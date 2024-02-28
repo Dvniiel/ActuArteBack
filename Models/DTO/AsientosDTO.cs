@@ -5,8 +5,8 @@ namespace ActuArte.Models;
 
 public class AsientosDTO
 {
-    public int idAsiento {get; set;}
+    public int idAsiento { get; set; }
 
-    public bool estaOcupado {get; set;}
+    public bool estaOcupado { get; set; }
 
 }

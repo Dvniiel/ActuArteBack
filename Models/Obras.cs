@@ -6,7 +6,7 @@ namespace ActuArte.Models;
 public class Obras
 {
     public Obras()
-    {}
+    { }
 
     [Key]
     public int idObra { get; set; }

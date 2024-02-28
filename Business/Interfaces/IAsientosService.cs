@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using ActuArte.Models; 
+using ActuArte.Models;
 using System.Threading.Tasks;
 
 namespace ActuArte.Business
@@ -8,7 +8,7 @@ namespace ActuArte.Business
     {
         List<Asientos> GetAll();
         Asientos? Get(int Id);
-        
+
         void Update(Asientos asientos);
 
     }

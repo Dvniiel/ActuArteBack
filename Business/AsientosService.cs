@@ -11,7 +11,7 @@ namespace ActuArte.Business
             _asientoRepository = asientosRepository;
         }
         public List<Asientos> GetAll() => _asientoRepository.GetAll();
-         public Asientos Get(int Id) => _asientoRepository.Get(Id);
+        public Asientos Get(int Id) => _asientoRepository.Get(Id);
 
         public void Update(Asientos asientos) => _asientoRepository.Update(asientos);
     }

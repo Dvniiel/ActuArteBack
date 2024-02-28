@@ -5,11 +5,11 @@ namespace ActuArte.Models;
 
 public class ObrasDTO
 {
-    public int idObra {get; set;}
+    public int idObra { get; set; }
 
-    public string? nombreObra {get; set;}
+    public string? nombreObra { get; set; }
 
-    public string? imagen {get; set;}
+    public string? imagen { get; set; }
 
     public string? descObra { get; set; }
 

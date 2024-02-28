@@ -3,17 +3,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ActuArte.Models;
 
-    public class Asientos
-    {
+public class Asientos
+{
 
-        public Asientos(){}
+    public Asientos() { }
 
-        [Key]
-        public int idAsiento { get; set; }
+    [Key]
+    public int idAsiento { get; set; }
 
-        [Required]
-        public bool estaOcupado { get; set; }
+    [Required]
+    public bool estaOcupado { get; set; }
 
 
-    }
+
+}
 

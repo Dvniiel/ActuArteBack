@@ -12,5 +12,7 @@ namespace ActuArte.Data
         void Delete(int Id);
 
         void Update(Obras obras);
+
+        void AddObra(int obraId, int sesionId, int idAsiento);
     }
 }

@@ -18,5 +18,11 @@ namespace ActuArte.Business
         public void Delete(int Id) => _obraRepository.Delete(Id);
 
         public void Update(Obras obras) => _obraRepository.Update(obras);
+        public void AddObra(int obraId, int sesionId, int idAsiento)
+        {
+            _obraRepository.AddObra(obraId, sesionId, idAsiento);
+
+
+        }
     }
 }

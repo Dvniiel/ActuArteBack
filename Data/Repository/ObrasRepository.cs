@@ -45,10 +45,25 @@ namespace ActuArte.Data
             var exist = _context.Obras.Any(obras => obras.idObra == Id);
             if (exist != null)
             {
-            var obras = _context.Obras.FirstOrDefault(obras => obras.idObra == Id);
-            _context.Obras.Remove(obras);
-            _context.SaveChanges();
+                var obras = _context.Obras.FirstOrDefault(obras => obras.idObra == Id);
+                _context.Obras.Remove(obras);
+                _context.SaveChanges();
             }
+        }
+
+        public void AddObra(int obraId, int sesionId, int idAsiento)
+        {
+
+            var nuevoAsiento = new AsientosGuardados
+            {
+                idObra = obraId,
+                idSesion = sesionId,
+                idAsiento = idAsiento,
+            };
+
+            _context.AsientosObrasDatos.Add(nuevoAsiento);
+            _context.SaveChanges();
+
         }
 
     }

@@ -7,7 +7,7 @@ namespace ActuArte.Business
     {
         private readonly IUsuariosRepository _usuarioRepository;
 
-        public UsuariosService (IUsuariosRepository usuariosRepository)
+        public UsuariosService(IUsuariosRepository usuariosRepository)
         {
             _usuarioRepository = usuariosRepository;
         }

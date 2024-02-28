@@ -26,6 +26,21 @@ namespace ActuArte.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "AsientosObrasDatos",
+                columns: table => new
+                {
+                    idObjeto = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    idObra = table.Column<int>(type: "int", nullable: false),
+                    idSesion = table.Column<int>(type: "int", nullable: false),
+                    idAsiento = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AsientosObrasDatos", x => x.idObjeto);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Obras",
                 columns: table => new
                 {
@@ -159,6 +174,9 @@ namespace ActuArte.Data.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Asientos");
+
+            migrationBuilder.DropTable(
+                name: "AsientosObrasDatos");
 
             migrationBuilder.DropTable(
                 name: "Obras");

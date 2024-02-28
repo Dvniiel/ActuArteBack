@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ActuArte.Data.Migrations
 {
     [DbContext(typeof(ActuArteContext))]
-    [Migration("20240227172635_InitialCreate")]
+    [Migration("20240228202657_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -310,6 +310,28 @@ namespace ActuArte.Data.Migrations
                             idAsiento = 54,
                             estaOcupado = false
                         });
+                });
+
+            modelBuilder.Entity("ActuArte.Models.AsientosGuardados", b =>
+                {
+                    b.Property<int>("idObjeto")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idObjeto"));
+
+                    b.Property<int>("idAsiento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idObra")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idSesion")
+                        .HasColumnType("int");
+
+                    b.HasKey("idObjeto");
+
+                    b.ToTable("AsientosObrasDatos");
                 });
 
             modelBuilder.Entity("ActuArte.Models.Obras", b =>

@@ -20,7 +20,7 @@ namespace ActuArte.Data
             return _context.Usuarios.ToList();
 
         }
-         public Usuarios Get(int id)
+        public Usuarios Get(int id)
         {
             return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.idUsuario == id);
         }
@@ -44,9 +44,9 @@ namespace ActuArte.Data
             var exist = _context.Usuarios.Any(usuarios => usuarios.idUsuario == Id);
             if (exist != null)
             {
-            var usuarios = _context.Usuarios.FirstOrDefault(usuarios => usuarios.idUsuario == Id);
-            _context.Usuarios.Remove(usuarios);
-            _context.SaveChanges();
+                var usuarios = _context.Usuarios.FirstOrDefault(usuarios => usuarios.idUsuario == Id);
+                _context.Usuarios.Remove(usuarios);
+                _context.SaveChanges();
             }
         }
     }

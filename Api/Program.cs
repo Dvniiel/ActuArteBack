@@ -14,11 +14,11 @@ var isRunningInDocker = Environment.GetEnvironmentVariable("DOCKER_CONTAINER") =
 var keyString = isRunningInDocker ? "ServerDB_Docker" : "ServerDB_Local";
 var connectionString = builder.Configuration.GetConnectionString(keyString);
 
-builder.Services.AddDbContext<ActuArteContext>(options => 
+builder.Services.AddDbContext<ActuArteContext>(options =>
     options.UseSqlServer(connectionString, sqlServerOptionsAction: sqlOptions =>
     {
         sqlOptions.EnableRetryOnFailure(
-            maxRetryCount:10,
+            maxRetryCount: 10,
             maxRetryDelay: TimeSpan.FromSeconds(30),
             errorNumbersToAdd: null);
     }));

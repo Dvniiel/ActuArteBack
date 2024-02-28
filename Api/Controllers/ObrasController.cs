@@ -52,7 +52,7 @@ namespace ActuArte.Controllers
 
 
         [HttpPost]
-        public ActionResult<ObrasDTO> Create(Obras obra)
+        public ActionResult<Obras> Create(Obras obra)
         {
             var existeObra = _obraService.Get(obra.idObra);
             if (existeObra != null)
@@ -80,5 +80,20 @@ namespace ActuArte.Controllers
             return NoContent();
         }
 
+        [HttpPost("{id}/Sesion/{sesionId}")]
+        public IActionResult AddObra(int id, int sesionId, [FromBody] List<int> asientos)
+        {
+                if (asientos == null)
+                {
+                    return BadRequest("No hay información de asiento para agregar.");
+                }
+
+                foreach (var asiento in asientos)
+                {
+                    _obraService.AddObra(id, sesionId, asiento);
+                }
+
+                return Ok("Asientos añadidos correctamente.");
+        }
     }
 }

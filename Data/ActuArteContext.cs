@@ -17,6 +17,7 @@ namespace ActuArte.Data
         public DbSet<Obras> Obras { get; set; }
         public DbSet<Asientos> Asientos { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
+        public DbSet<AsientosGuardados> AsientosObrasDatos { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -199,7 +200,7 @@ namespace ActuArte.Data
                     duracionObra = 90
                 }
 
-                );
+            );
 
             modelBuilder.Entity<Usuarios>().HasData(
                 new Usuarios
@@ -226,226 +227,284 @@ namespace ActuArte.Data
                     nombreUsuario = "admin4",
                     passwordUsuario = "admin"
                 }
-                );
-                modelBuilder.Entity<Asientos>().HasData(
-                new Asientos{
+            );
+
+
+            modelBuilder.Entity<Asientos>().HasData(
+                new Asientos
+                {
                     idAsiento = 1,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 2,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 3,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 4,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 5,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 6,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 7,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 8,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 9,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 10,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 11,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 12,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 13,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 14,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 15,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 16,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 17,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 18,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 19,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 20,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 21,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 22,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 23,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 24,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 25,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 26,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 27,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 28,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 29,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 30,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 31,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 32,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 33,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 34,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 35,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 36,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 37,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 38,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 39,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 40,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 41,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 42,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 43,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 44,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 45,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 46,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 47,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 48,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 49,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 50,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 51,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 52,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 53,
                     estaOcupado = false
                 },
-                new Asientos{
+                new Asientos
+                {
                     idAsiento = 54,
                     estaOcupado = false
                 }
-              );
-            
+            );
+
+        
+
         }
     }
 }

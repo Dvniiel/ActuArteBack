@@ -309,6 +309,28 @@ namespace ActuArte.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("ActuArte.Models.AsientosGuardados", b =>
+                {
+                    b.Property<int>("idObjeto")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idObjeto"));
+
+                    b.Property<int>("idAsiento")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idObra")
+                        .HasColumnType("int");
+
+                    b.Property<int>("idSesion")
+                        .HasColumnType("int");
+
+                    b.HasKey("idObjeto");
+
+                    b.ToTable("AsientosObrasDatos");
+                });
+
             modelBuilder.Entity("ActuArte.Models.Obras", b =>
                 {
                     b.Property<int>("idObra")
