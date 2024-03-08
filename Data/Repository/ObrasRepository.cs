@@ -66,5 +66,11 @@ namespace ActuArte.Data
 
         }
 
+        public List<Obras> GetAclamadas() => _context.Obras.Where(o => o.aclamadas).ToList();
+
+        public List<Obras> GetRecientes() => _context.Obras.Where(o => o.recientes).ToList();
+
+        public List<Obras> GetUltimasSesiones() => _context.Obras.Where(o => o.ultimasSesiones).ToList();
+
     }
 }

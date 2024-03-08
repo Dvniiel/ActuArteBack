@@ -32,7 +32,10 @@ namespace ActuArte.Data
                     imagen = "https://almeriaciudad.es/cultura/wp-content/archivos/sites/21/2022/02/IMG_2391-1.jpeg",
                     autorObra = "Nayra Calvo y Miguel A.Luengo",
                     directorObra = "Franco Zeffirelli",
-                    duracionObra = 90
+                    duracionObra = 90,
+                    aclamadas = true,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -43,7 +46,10 @@ namespace ActuArte.Data
                     imagen = "https://chglenguayliteratura.files.wordpress.com/2020/01/aaaa.jpg",
                     autorObra = "Nancy Fabiola Herrera y Carmen Romeu",
                     directorObra = "Alfredo Sanzol",
-                    duracionObra = 60
+                    duracionObra = 60,
+                    aclamadas = false,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -54,7 +60,10 @@ namespace ActuArte.Data
                     imagen = "https://www.cervantesvirtual.com/s3/BVMC_OBRAS/ffa/c66/288/2b1/11d/fac/c70/021/85c/e60/64/mimes/imagenes/ffac6628-82b1-11df-acc7-002185ce6064_2.jpg",
                     autorObra = "Cobadonga Calderon y Javier Mañon",
                     directorObra = "Antonio Castro Guijosa",
-                    duracionObra = 60
+                    duracionObra = 60,
+                    aclamadas = true,
+                    recientes = true,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -65,7 +74,10 @@ namespace ActuArte.Data
                     imagen = "https://www.elejandria.com/covers/La_vida_es_sueno-Calderon_de_la_Barca_Pedro-md.png",
                     autorObra = "David Luque y Rebeca Matellan",
                     directorObra = "Declan Deonnellan",
-                    duracionObra = 100
+                    duracionObra = 100,
+                    aclamadas = false,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -76,7 +88,10 @@ namespace ActuArte.Data
                     imagen = "https://cdn.kobo.com/book-images/5fc4252b-1c4f-40ef-9975-22982c94f12c/1200/1200/False/hamlet-prince-of-denmark-23.jpg",
                     autorObra = "Juan Motilla y Antonio Campos",
                     directorObra = "Miguel del Arco",
-                    duracionObra = 95
+                    duracionObra = 95,
+                    aclamadas = true,
+                    recientes = true,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -87,7 +102,10 @@ namespace ActuArte.Data
                     imagen = "https://teatroaranjuez.es/wp-content/uploads/2023/10/el-fantasma-de-la-opera-330x467-1.jpg",
                     autorObra = "Manu Pilas y Gerónimo Raouch",
                     directorObra = "Federico Bellone",
-                    duracionObra = 150
+                    duracionObra = 150,
+                    aclamadas = false,
+                    recientes = true,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -98,7 +116,10 @@ namespace ActuArte.Data
                     imagen = "https://image.isu.pub/190709204809-9c82f7fce8bb840f1ff3b5631eef637f/jpg/page_1.jpg",
                     autorObra = "Rafa Ramos y Jordi Millan",
                     directorObra = "Marco Carniti",
-                    duracionObra = 90
+                    duracionObra = 90,
+                    aclamadas = true,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -109,7 +130,10 @@ namespace ActuArte.Data
                     imagen = "https://m.media-amazon.com/images/I/61Er0I3cJaL._AC_UF1000,1000_QL80_.jpg",
                     autorObra = "Francisco Fraguas y Amanda Recacha",
                     directorObra = "Pedro Amalio Lopez",
-                    duracionObra = 100
+                    duracionObra = 100,
+                    aclamadas = false,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -120,7 +144,10 @@ namespace ActuArte.Data
                     imagen = "https://m.media-amazon.com/images/I/418RabpIZVS.jpg",
                     autorObra = "Blanca Apilanez y Juan José Otegui",
                     directorObra = "Adolfo Marsillat",
-                    duracionObra = 90
+                    duracionObra = 90,
+                    aclamadas = true,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -131,7 +158,10 @@ namespace ActuArte.Data
                     imagen = "https://m.media-amazon.com/images/I/71WJbXGxPdL._AC_UF1000,1000_QL80_.jpg",
                     autorObra = "Alejandro Centro y Daniel Valdovinos",
                     directorObra = "Dante",
-                    duracionObra = 110
+                    duracionObra = 110,
+                    aclamadas = true,
+                    recientes = true,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -142,7 +172,10 @@ namespace ActuArte.Data
                     imagen = "https://www.tarambana.net/upload/espectaculos/foto_poster-1296.jpg?id=117364",
                     autorObra = "Eduardo Tovar y Virginia Sanchez",
                     directorObra = "Eva del Palacio",
-                    duracionObra = 70
+                    duracionObra = 70,
+                    aclamadas = false,
+                    recientes = false,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -153,7 +186,10 @@ namespace ActuArte.Data
                     imagen = "https://upload.wikimedia.org/wikipedia/en/3/30/Cats_1998_DVD_Cover.jpg",
                     autorObra = "Tailor Swoft y Jason Derulo",
                     directorObra = "Trevor Nunn",
-                    duracionObra = 120
+                    duracionObra = 120,
+                    aclamadas = true,
+                    recientes = true,
+                    ultimasSesiones = false
                 },
                 new Obras
                 {
@@ -164,7 +200,10 @@ namespace ActuArte.Data
                     imagen = "https://m.media-amazon.com/images/M/MV5BNjczYjBhMTctYTA3Yy00NTgyLWFkZWQtZjQwYTRkMDc1YTc1XkEyXkFqcGdeQXVyNTk5NTQzNDI@._V1_.jpg",
                     autorObra = "Arianna Grande y Adam James",
                     directorObra = "Joe Mantello",
-                    duracionObra = 165
+                    duracionObra = 165,
+                    aclamadas = false,
+                    recientes = false,
+                    ultimasSesiones = true
                 },
                 new Obras
                 {
@@ -175,7 +214,10 @@ namespace ActuArte.Data
                     imagen = "https://m.media-amazon.com/images/I/517Cb2FS4qL.jpg",
                     autorObra = "Miguel del Arco y Gemma Castaño",
                     directorObra = "David White",
-                    duracionObra = 210
+                    duracionObra = 210,
+                    aclamadas = true,
+                    recientes = false,
+                    ultimasSesiones = true
                 },
                 new Obras
                 {
@@ -186,7 +228,10 @@ namespace ActuArte.Data
                     imagen = "https://images.cdn3.buscalibre.com/fit-in/360x360/ef/99/ef9995dc7f336bc670c2775b7316b143.jpg",
                     autorObra = " Nayra Calvo y Miguel A.Luengo",
                     directorObra = "Franco Zeffirelli",
-                    duracionObra = 100
+                    duracionObra = 100,
+                    aclamadas = false,
+                    recientes = false,
+                    ultimasSesiones = true
                 },
                 new Obras
                 {
@@ -197,7 +242,10 @@ namespace ActuArte.Data
                     imagen = "https://m.media-amazon.com/images/I/51fM26seM-L.jpg",
                     autorObra = " Carmelo Gomez y Joaquin Notario",
                     directorObra = "Miguel Nieto",
-                    duracionObra = 90
+                    duracionObra = 90,
+                    aclamadas = true,
+                    recientes = false,
+                    ultimasSesiones = true
                 }
 
             );

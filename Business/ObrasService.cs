@@ -24,5 +24,12 @@ namespace ActuArte.Business
 
 
         }
+
+         public List<Obras> GetAclamadas() => _obraRepository.GetAclamadas();
+
+         public List<Obras> GetRecientes() => _obraRepository.GetRecientes();
+
+         public List<Obras> GetUltimasSesiones() => _obraRepository.GetUltimasSesiones();
     }
+
 }

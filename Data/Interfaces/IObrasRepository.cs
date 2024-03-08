@@ -14,5 +14,11 @@ namespace ActuArte.Data
         void Update(Obras obras);
 
         void AddObra(int obraId, int sesionId, int idAsiento);
+
+        List<Obras> GetAclamadas();
+
+        List<Obras> GetRecientes();
+
+        List<Obras> GetUltimasSesiones();
     }
 }

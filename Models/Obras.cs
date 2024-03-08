@@ -33,5 +33,13 @@ public class Obras
 
     public int duracionObra { get; set; }
 
+    public bool aclamadas { get; set; }
+
+    public bool recientes { get; set; }
+
+    public bool ultimasSesiones { get; set; }
+
+
+
 }
 

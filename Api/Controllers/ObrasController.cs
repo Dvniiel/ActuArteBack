@@ -83,17 +83,26 @@ namespace ActuArte.Controllers
         [HttpPost("{id}/Sesion/{sesionId}")]
         public IActionResult AddObra(int id, int sesionId, [FromBody] List<int> asientos)
         {
-                if (asientos == null)
-                {
-                    return BadRequest("No hay información de asiento para agregar.");
-                }
+            if (asientos == null)
+            {
+                return BadRequest("No hay información de asiento para agregar.");
+            }
 
-                foreach (var asiento in asientos)
-                {
-                    _obraService.AddObra(id, sesionId, asiento);
-                }
+            foreach (var asiento in asientos)
+            {
+                _obraService.AddObra(id, sesionId, asiento);
+            }
 
-                return Ok("Asientos añadidos correctamente.");
+            return Ok("Asientos añadidos correctamente.");
         }
+
+        [HttpGet("aclamadas")]
+        public ActionResult<List<Obras>> GetAclamadas() => _obraService.GetAclamadas();
+
+        [HttpGet("recientes")]
+        public ActionResult<List<Obras>> GetRecientes() => _obraService.GetRecientes();
+
+        [HttpGet("ultimasSesiones")]
+        public ActionResult<List<Obras>> GetUltimasSesiones() => _obraService.GetUltimasSesiones();
     }
 }
