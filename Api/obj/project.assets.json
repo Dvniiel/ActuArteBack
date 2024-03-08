@@ -4156,11 +4156,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Api\\ActuArte.Api.csproj",
+      "projectUniqueName": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Api\\ActuArte.Api.csproj",
       "projectName": "ActuArte.Api",
-      "projectPath": "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Api\\ActuArte.Api.csproj",
+      "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Api\\ActuArte.Api.csproj",
       "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Api\\obj\\",
+      "outputPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4182,14 +4182,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Business\\ActuArte.Business.csproj": {
-              "projectPath": "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Business\\ActuArte.Business.csproj"
+            "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Business\\ActuArte.Business.csproj": {
+              "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Business\\ActuArte.Business.csproj"
             },
-            "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj": {
-              "projectPath": "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj"
+            "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj": {
+              "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Data\\ActuArte.Data.csproj"
             },
-            "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj": {
-              "projectPath": "C:\\Users\\S2-PC00\\desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj"
+            "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj": {
+              "projectPath": "C:\\Users\\S2-PC00\\Desktop\\ActuArteBack\\Models\\ActuArte.Models.csproj"
             }
           }
         }

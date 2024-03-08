@@ -12,5 +12,6 @@ namespace ActuArte.Business
         void Update(Usuarios usuarios);
         void Add(Usuarios usuarios);
         void Delete(int id);
+        Usuarios Authenticate(string nombreUsuario, string passwordUsuario);
     }
 }

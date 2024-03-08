@@ -49,5 +49,9 @@ namespace ActuArte.Data
                 _context.SaveChanges();
             }
         }
+         public Usuarios GetByUsername(string nombreUsuario) 
+        {
+            return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.nombreUsuario == nombreUsuario);
+        }
     }
 }

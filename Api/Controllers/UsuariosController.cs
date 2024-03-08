@@ -83,5 +83,24 @@ namespace ActuArte.Controllers
             return NoContent();
         }
 
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] LoginModel loginModel)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest("Invalid login model");
+            }
+
+            
+            var usuario = _usuarioService.Authenticate(loginModel.nombreUsuario, loginModel.passwordUsuario);
+
+            if (usuario == null)
+            {
+                return Unauthorized("Invalid username or password");
+            }
+
+            return Ok(usuario); 
+        }
+        
     }
 }
