@@ -13,6 +13,9 @@ public class Asientos
 
     [Required]
     public bool estaOcupado { get; set; }
+    [Required]
+    public int idObra {get; set;}
+
 
 
 

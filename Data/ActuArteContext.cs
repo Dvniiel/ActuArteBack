@@ -18,8 +18,12 @@ namespace ActuArte.Data
         public DbSet<Asientos> Asientos { get; set; }
         public DbSet<Usuarios> Usuarios { get; set; }
         public DbSet<AsientosGuardados> AsientosObrasDatos { get; set; }
+        public DbSet<AsientosGuardados> AsientosOcupados { get; set; }
 
-
+          public List<Asientos> GetAsientosOcupados(int idObra)
+        {
+            return Asientos.Where(a => a.idObra == idObra && a.estaOcupado).ToList();
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Obras>().HasData(

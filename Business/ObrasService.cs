@@ -18,6 +18,11 @@ namespace ActuArte.Business
         public void Delete(int Id) => _obraRepository.Delete(Id);
 
         public void Update(Obras obras) => _obraRepository.Update(obras);
+        public List<AsientosGuardados> GetAsientosOcupados(int obraId, int sesionId)
+        {
+            return _obraRepository.GetAsientosOcupados(obraId, sesionId);
+        }
+
         public void AddObra(int obraId, int sesionId, int idAsiento)
         {
             _obraRepository.AddObra(obraId, sesionId, idAsiento);
@@ -25,11 +30,11 @@ namespace ActuArte.Business
 
         }
 
-         public List<Obras> GetAclamadas() => _obraRepository.GetAclamadas();
+        public List<Obras> GetAclamadas() => _obraRepository.GetAclamadas();
 
-         public List<Obras> GetRecientes() => _obraRepository.GetRecientes();
+        public List<Obras> GetRecientes() => _obraRepository.GetRecientes();
 
-         public List<Obras> GetUltimasSesiones() => _obraRepository.GetUltimasSesiones();
+        public List<Obras> GetUltimasSesiones() => _obraRepository.GetUltimasSesiones();
     }
 
 }

@@ -18,7 +18,8 @@ namespace ActuArte.Data.Migrations
                 {
                     idAsiento = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    estaOcupado = table.Column<bool>(type: "bit", nullable: false)
+                    estaOcupado = table.Column<bool>(type: "bit", nullable: false),
+                    idObra = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -26,7 +27,7 @@ namespace ActuArte.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AsientosObrasDatos",
+                name: "AsientosGuardados",
                 columns: table => new
                 {
                     idObjeto = table.Column<int>(type: "int", nullable: false)
@@ -37,7 +38,7 @@ namespace ActuArte.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AsientosObrasDatos", x => x.idObjeto);
+                    table.PrimaryKey("PK_AsientosGuardados", x => x.idObjeto);
                 });
 
             migrationBuilder.CreateTable(
@@ -78,63 +79,63 @@ namespace ActuArte.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Asientos",
-                columns: new[] { "idAsiento", "estaOcupado" },
+                columns: new[] { "idAsiento", "estaOcupado", "idObra" },
                 values: new object[,]
                 {
-                    { 1, false },
-                    { 2, false },
-                    { 3, false },
-                    { 4, false },
-                    { 5, false },
-                    { 6, false },
-                    { 7, false },
-                    { 8, false },
-                    { 9, false },
-                    { 10, false },
-                    { 11, false },
-                    { 12, false },
-                    { 13, false },
-                    { 14, false },
-                    { 15, false },
-                    { 16, false },
-                    { 17, false },
-                    { 18, false },
-                    { 19, false },
-                    { 20, false },
-                    { 21, false },
-                    { 22, false },
-                    { 23, false },
-                    { 24, false },
-                    { 25, false },
-                    { 26, false },
-                    { 27, false },
-                    { 28, false },
-                    { 29, false },
-                    { 30, false },
-                    { 31, false },
-                    { 32, false },
-                    { 33, false },
-                    { 34, false },
-                    { 35, false },
-                    { 36, false },
-                    { 37, false },
-                    { 38, false },
-                    { 39, false },
-                    { 40, false },
-                    { 41, false },
-                    { 42, false },
-                    { 43, false },
-                    { 44, false },
-                    { 45, false },
-                    { 46, false },
-                    { 47, false },
-                    { 48, false },
-                    { 49, false },
-                    { 50, false },
-                    { 51, false },
-                    { 52, false },
-                    { 53, false },
-                    { 54, false }
+                    { 1, false, 0 },
+                    { 2, false, 0 },
+                    { 3, false, 0 },
+                    { 4, false, 0 },
+                    { 5, false, 0 },
+                    { 6, false, 0 },
+                    { 7, false, 0 },
+                    { 8, false, 0 },
+                    { 9, false, 0 },
+                    { 10, false, 0 },
+                    { 11, false, 0 },
+                    { 12, false, 0 },
+                    { 13, false, 0 },
+                    { 14, false, 0 },
+                    { 15, false, 0 },
+                    { 16, false, 0 },
+                    { 17, false, 0 },
+                    { 18, false, 0 },
+                    { 19, false, 0 },
+                    { 20, false, 0 },
+                    { 21, false, 0 },
+                    { 22, false, 0 },
+                    { 23, false, 0 },
+                    { 24, false, 0 },
+                    { 25, false, 0 },
+                    { 26, false, 0 },
+                    { 27, false, 0 },
+                    { 28, false, 0 },
+                    { 29, false, 0 },
+                    { 30, false, 0 },
+                    { 31, false, 0 },
+                    { 32, false, 0 },
+                    { 33, false, 0 },
+                    { 34, false, 0 },
+                    { 35, false, 0 },
+                    { 36, false, 0 },
+                    { 37, false, 0 },
+                    { 38, false, 0 },
+                    { 39, false, 0 },
+                    { 40, false, 0 },
+                    { 41, false, 0 },
+                    { 42, false, 0 },
+                    { 43, false, 0 },
+                    { 44, false, 0 },
+                    { 45, false, 0 },
+                    { 46, false, 0 },
+                    { 47, false, 0 },
+                    { 48, false, 0 },
+                    { 49, false, 0 },
+                    { 50, false, 0 },
+                    { 51, false, 0 },
+                    { 52, false, 0 },
+                    { 53, false, 0 },
+                    { 54, false, 0 }
                 });
 
             migrationBuilder.InsertData(
@@ -179,7 +180,7 @@ namespace ActuArte.Data.Migrations
                 name: "Asientos");
 
             migrationBuilder.DropTable(
-                name: "AsientosObrasDatos");
+                name: "AsientosGuardados");
 
             migrationBuilder.DropTable(
                 name: "Obras");

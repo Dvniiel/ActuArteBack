@@ -80,20 +80,42 @@ namespace ActuArte.Controllers
             return NoContent();
         }
 
+
+        [HttpGet("{id}/Sesion/{sesionId}")]
+        public IActionResult GetAsientosOcupados(int id, int sesionId)
+        {
+            var asientosOcupados = _obraService.GetAsientosOcupados(id, sesionId);
+
+            if (asientosOcupados == null || asientosOcupados.Count == 0)
+            {
+                return NotFound("No se encontraron asientos ocupados para la sesión y obra especificadas.");
+            }
+
+            return Ok(asientosOcupados);
+        }
+
+
         [HttpPost("{id}/Sesion/{sesionId}")]
         public IActionResult AddObra(int id, int sesionId, [FromBody] List<int> asientos)
         {
-            if (asientos == null)
+            if (asientos == null || asientos.Count == 0)
             {
                 return BadRequest("No hay información de asiento para agregar.");
             }
 
-            foreach (var asiento in asientos)
+            try
             {
-                _obraService.AddObra(id, sesionId, asiento);
-            }
+                foreach (var asiento in asientos)
+                {
+                    _obraService.AddObra(id, sesionId, asiento);
+                }
 
-            return Ok("Asientos añadidos correctamente.");
+                return Ok("Asientos añadidos correctamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error interno del servidor: {ex.Message}");
+            }
         }
 
         [HttpGet("aclamadas")]

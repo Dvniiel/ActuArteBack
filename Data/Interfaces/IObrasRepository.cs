@@ -20,5 +20,7 @@ namespace ActuArte.Data
         List<Obras> GetRecientes();
 
         List<Obras> GetUltimasSesiones();
+        List<AsientosGuardados> GetAsientosOcupados(int obraId, int sesionId);
+
     }
 }

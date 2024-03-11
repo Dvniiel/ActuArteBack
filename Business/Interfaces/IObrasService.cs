@@ -12,6 +12,7 @@ namespace ActuArte.Business
         void Update(Obras obras);
         void Add(Obras obras);
         void Delete(int id);
+        List<AsientosGuardados> GetAsientosOcupados(int obraId, int sesionId);
         void AddObra(int obraId, int sesionId, int idAsiento);
 
         List<Obras> GetAclamadas();

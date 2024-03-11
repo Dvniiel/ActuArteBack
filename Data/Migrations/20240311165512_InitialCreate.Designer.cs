@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ActuArte.Data.Migrations
 {
     [DbContext(typeof(ActuArteContext))]
-    [Migration("20240308183222_InitialCreate")]
+    [Migration("20240311165512_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,6 +35,9 @@ namespace ActuArte.Data.Migrations
                     b.Property<bool>("estaOcupado")
                         .HasColumnType("bit");
 
+                    b.Property<int>("idObra")
+                        .HasColumnType("int");
+
                     b.HasKey("idAsiento");
 
                     b.ToTable("Asientos");
@@ -43,272 +46,326 @@ namespace ActuArte.Data.Migrations
                         new
                         {
                             idAsiento = 1,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 2,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 3,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 4,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 5,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 6,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 7,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 8,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 9,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 10,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 11,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 12,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 13,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 14,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 15,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 16,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 17,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 18,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 19,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 20,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 21,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 22,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 23,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 24,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 25,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 26,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 27,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 28,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 29,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 30,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 31,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 32,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 33,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 34,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 35,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 36,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 37,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 38,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 39,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 40,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 41,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 42,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 43,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 44,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 45,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 46,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 47,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 48,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 49,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 50,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 51,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 52,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 53,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         },
                         new
                         {
                             idAsiento = 54,
-                            estaOcupado = false
+                            estaOcupado = false,
+                            idObra = 0
                         });
                 });
 
@@ -331,7 +388,7 @@ namespace ActuArte.Data.Migrations
 
                     b.HasKey("idObjeto");
 
-                    b.ToTable("AsientosObrasDatos");
+                    b.ToTable("AsientosGuardados");
                 });
 
             modelBuilder.Entity("ActuArte.Models.Obras", b =>
