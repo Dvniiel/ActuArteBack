@@ -27,8 +27,8 @@ builder.Services.AddCors(options =>
 });
 
 
-var isRunningInDocker = Environment.GetEnvironmentVariable("DOCKER_CONTAINER") == "true";
-var keyString = isRunningInDocker ? "ServerDB_Docker" : "ServerDB_Local";
+
+var keyString = "ServerDB";
 var connectionString = builder.Configuration.GetConnectionString(keyString);
 
 builder.Services.AddDbContext<ActuArteContext>(options =>

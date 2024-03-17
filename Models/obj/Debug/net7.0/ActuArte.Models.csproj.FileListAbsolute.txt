@@ -33,3 +33,14 @@ C:\Users\PC\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.dll
 C:\Users\PC\Desktop\ActuArteBack\Models\obj\Debug\net7.0\refint\ActuArte.Models.dll
 C:\Users\PC\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.pdb
 C:\Users\PC\Desktop\ActuArteBack\Models\obj\Debug\net7.0\ref\ActuArte.Models.dll
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\bin\Debug\net7.0\ActuArte.Models.deps.json
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\bin\Debug\net7.0\ActuArte.Models.dll
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\bin\Debug\net7.0\ActuArte.Models.pdb
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.AssemblyInfoInputs.cache
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.AssemblyInfo.cs
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.csproj.CoreCompileInputs.cache
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.dll
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\refint\ActuArte.Models.dll
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ActuArte.Models.pdb
+C:\Users\acent\OneDrive\Escritorio\ActuArteBack\Models\obj\Debug\net7.0\ref\ActuArte.Models.dll
