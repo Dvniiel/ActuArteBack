@@ -2,8 +2,18 @@ using ActuArte.Business;
 using ActuArte.Models;
 using ActuArte.Data;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// CONFIG PARA EL LOGGER
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("logs/application.log", rollingInterval: RollingInterval.Day)
+    .WriteTo.Debug()
+    .CreateLogger();
+builder.Host.UseSerilog();
 
 // Agrega servicios al contenedor.
 builder.Services.AddControllers();
@@ -27,14 +37,7 @@ builder.Services.AddCors(options =>
 });
 
 
-// CONFIG PARA EL LOGGER
-Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .WriteTo.Console()
-    .WriteTo.File("logs/application.log", rollingInterval: RollingInterval.Day)
-    .WriteTo.Debug()
-    .CreateLogger();
-builder.Host.UseSerilog();
+
 
 
 

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using ActuArte.Models;
 using ActuArte.Business;
 using System.Collections.Generic;
+using Microsoft.Extensions.Logging;
 
 namespace ActuArte.Controllers
 {
@@ -12,9 +13,12 @@ namespace ActuArte.Controllers
     {
         private readonly UsuariosService _usuarioService;
 
-        public UsuariosController(UsuariosService usuarioService)
+        private readonly ILogger<UsuariosController> _logger;
+
+        public UsuariosController(UsuariosService usuarioService, ILogger<UsuariosController> logger)
         {
             _usuarioService = usuarioService;
+            _logger = logger;
         }
 
 
@@ -27,12 +31,21 @@ namespace ActuArte.Controllers
         [HttpGet("{Id}")]
         public ActionResult<Usuarios> Get(int Id)
         {
-            var usuarios = _usuarioService.Get(Id);
+            try
+            {
+                var usuarios = _usuarioService.Get(Id);
 
-            if (usuarios == null)
-                return NotFound();
+                if (usuarios == null)
+                    return NotFound();
 
-            return usuarios;
+                _logger.LogInformation("Recogiendo usuario por ID");
+                return usuarios;
+            }
+            catch
+            {
+                _logger.LogError("Error al obtener el usuario");
+                return StatusCode(400, "Usuario no encontrado");
+            }
         }
 
 
@@ -40,16 +53,25 @@ namespace ActuArte.Controllers
         [HttpPut("{Id}")]
         public IActionResult Update(int Id, Usuarios usuarios)
         {
-            if (Id != usuarios.idUsuario)
-                return BadRequest();
+            try
+            {
+                if (Id != usuarios.idUsuario)
+                    return BadRequest();
 
-            var existingUser = _usuarioService.Get(Id);
-            if (existingUser is null)
-                return NotFound();
+                var existingUser = _usuarioService.Get(Id);
+                if (existingUser is null)
+                    return NotFound();
 
-            _usuarioService.Update(usuarios);
+                _usuarioService.Update(usuarios);
 
-            return NoContent();
+                _logger.LogInformation("Realizado el put de Usuario correctamente");
+                return NoContent();
+            }
+            catch
+            {
+                _logger.LogError("");
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
 
 
@@ -57,15 +79,24 @@ namespace ActuArte.Controllers
         [HttpPost]
         public ActionResult<UsuariosDTO> Create(Usuarios usuario)
         {
-            var existeUser = _usuarioService.Get(usuario.idUsuario);
-            if (existeUser != null)
+            try
             {
-                return BadRequest($"Una obra con el ID {usuario.idUsuario} ya existe.");
+                var existeUser = _usuarioService.Get(usuario.idUsuario);
+                if (existeUser != null)
+                {
+                    return BadRequest($"Una obra con el ID {usuario.idUsuario} ya existe.");
+                }
+
+                _usuarioService.Add(usuario);
+
+                _logger.LogInformation("Usuario posteado correctamente");
+                return CreatedAtAction(nameof(Create), new { Id = usuario.idUsuario }, usuario);
             }
-
-            _usuarioService.Add(usuario);
-            return CreatedAtAction(nameof(Create), new { Id = usuario.idUsuario }, usuario);
-
+            catch
+            {
+                _logger.LogError("Error al postear un Usuario");
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
 
 
@@ -73,34 +104,54 @@ namespace ActuArte.Controllers
         [HttpDelete("{Id}")]
         public IActionResult Delete(int Id)
         {
-            var usuario = _usuarioService.Get(Id);
+            try
+            {
+                var usuario = _usuarioService.Get(Id);
 
-            if (usuario is null)
-                return NotFound();
+                if (usuario is null)
+                    return NotFound();
 
-            _usuarioService.Delete(Id);
+                _usuarioService.Delete(Id);
 
-            return NoContent();
+                _logger.LogInformation("Usuario eliminado correctamente");
+                return NoContent();
+            }
+            catch
+            {
+                _logger.LogError("Error al eliminar un usuario");
+                return StatusCode(500, "Error interno del servidor");
+            }
         }
+
+
 
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel loginModel)
         {
-            if (!ModelState.IsValid)
+            try
             {
-                return BadRequest("Invalid login model");
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest("Invalid login model");
+                }
+
+
+                var usuario = _usuarioService.Authenticate(loginModel.nombreUsuario, loginModel.passwordUsuario);
+
+                if (usuario == null)
+                {
+                    return Unauthorized("Invalid username or password");
+                }
+
+                _logger.LogInformation("Usuario correcto");
+                return Ok(usuario);
             }
-
-            
-            var usuario = _usuarioService.Authenticate(loginModel.nombreUsuario, loginModel.passwordUsuario);
-
-            if (usuario == null)
+            catch
             {
-                return Unauthorized("Invalid username or password");
+                _logger.LogError("Error de autenticación");
+                return StatusCode(500, "Error interno del servidor");
             }
-
-            return Ok(usuario); 
         }
-        
+
     }
 }
