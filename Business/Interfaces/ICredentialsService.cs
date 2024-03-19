@@ -6,6 +6,6 @@ namespace ActuArte.Business
 {
     public interface ICredentialsService
     {
-
+        Usuarios Authenticate(UsuariosDTO usuariosDTO);
     }
 }

@@ -68,6 +68,7 @@ namespace ActuArte.Data.Migrations
                 {
                     idUsuario = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    isAdmin = table.Column<bool>(type: "bit", nullable: false),
                     nombreUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     passwordUsuario = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -162,13 +163,13 @@ namespace ActuArte.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Usuarios",
-                columns: new[] { "idUsuario", "nombreUsuario", "passwordUsuario" },
+                columns: new[] { "idUsuario", "isAdmin", "nombreUsuario", "passwordUsuario" },
                 values: new object[,]
                 {
-                    { 1, "admin", "admin" },
-                    { 2, "admin2", "admin" },
-                    { 3, "admin3", "admin" },
-                    { 4, "admin4", "admin" }
+                    { 1, false, "admin", "admin" },
+                    { 2, false, "admin2", "admin" },
+                    { 3, false, "admin3", "admin" },
+                    { 4, false, "admin4", "admin" }
                 });
         }
 

@@ -125,33 +125,5 @@ namespace ActuArte.Controllers
 
 
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginModel loginModel)
-        {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest("Invalid login model");
-                }
-
-
-                var usuario = _usuarioService.Authenticate(loginModel.nombreUsuario, loginModel.passwordUsuario);
-
-                if (usuario == null)
-                {
-                    return Unauthorized("Invalid username or password");
-                }
-
-                _logger.LogInformation("Usuario correcto");
-                return Ok(usuario);
-            }
-            catch
-            {
-                _logger.LogError("Error de autenticación");
-                return StatusCode(500, "Error interno del servidor");
-            }
-        }
-
     }
 }

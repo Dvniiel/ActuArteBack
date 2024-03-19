@@ -20,18 +20,6 @@ namespace ActuArte.Business
         public void Update(Usuarios usuarios) => _usuarioRepository.Update(usuarios);
         
 
-        public Usuarios Authenticate(string nombreUsuario, string password)
-        {
-            
-            var usuario = _usuarioRepository.GetByUsername(nombreUsuario);
-
-            
-            if (usuario != null && usuario.passwordUsuario == password)
-            {
-                return usuario;
-            }
-
-            return null; 
-        }
+        
     }
 }

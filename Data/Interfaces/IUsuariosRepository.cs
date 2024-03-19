@@ -11,6 +11,6 @@ namespace ActuArte.Data
         void Delete(int Id);
 
         void Update(Usuarios usuarios);
-        Usuarios GetByUsername(string nombreUsuario); // Agregar este método
+        
     }
 }

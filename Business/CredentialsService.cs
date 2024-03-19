@@ -12,7 +12,19 @@ namespace ActuArte.Business
             _credentialsRepository = credentialsRepository;
         }
 
-        
+        public Usuarios Authenticate(UsuariosDTO usuariosDTO)
+        {
+            
+            var usuario = _credentialsRepository.GetByUsername(usuariosDTO);
+
+            
+            if (usuario == null)
+            {
+                return null;
+            }
+
+            return usuario; 
+        }
 
     }
 }

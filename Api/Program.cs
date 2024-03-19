@@ -41,7 +41,8 @@ builder.Services.AddCors(options =>
 
 
 
-var keyString = "ServerDB";
+var isRunningInDocker = Environment.GetEnvironmentVariable("DOCKER_CONTAINER") == "true";
+var keyString = isRunningInDocker ? "ServerDB_Docker" : "ServerDB_Local";
 var connectionString = builder.Configuration.GetConnectionString(keyString);
 
 builder.Services.AddDbContext<ActuArteContext>(options =>
@@ -66,6 +67,10 @@ builder.Services.AddScoped<IUsuariosRepository, UsuariosRepository>();
 // ASIENTOUUS
 builder.Services.AddScoped<AsientosService>();
 builder.Services.AddScoped<IAsientosRepository, AsientosRepository>();
+
+// CREDENTIALS
+builder.Services.AddScoped<CredentialsService>();
+builder.Services.AddScoped<ICredentialsRepository, CredentialsRepository>();
 
 
 

@@ -13,5 +13,10 @@ namespace ActuArte.Data
         {
             _context = context;
         }
+
+        public Usuarios GetByUsername(UsuariosDTO usuariosDTO) 
+        {
+            return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.nombreUsuario == usuariosDTO.nombreUsuario && usuarios.passwordUsuario == usuariosDTO.passwordUsuario);
+        }
     }
 }

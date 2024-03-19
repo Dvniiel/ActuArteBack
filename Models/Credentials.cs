@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ActuArte.Models
 {
-    public class Authentication
+    public class LoginModel
     {
 
         [Required]
