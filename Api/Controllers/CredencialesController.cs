@@ -9,13 +9,13 @@ namespace ActuArte.Controllers
     [ApiController]
     [Route("[controller]")]
 
-    public class AuthController : ControllerBase
+    public class CredencialesController : ControllerBase
     {
         private readonly CredentialsService _credentialsService;
 
-        private readonly ILogger<AuthController> _logger;
+        private readonly ILogger<CredencialesController> _logger;
 
-        public AuthController(CredentialsService credentialsService, ILogger<AuthController> logger)
+        public CredencialesController(CredentialsService credentialsService, ILogger<CredencialesController> logger)
         {
             _credentialsService = credentialsService;
             _logger = logger;
@@ -47,7 +47,7 @@ namespace ActuArte.Controllers
             }
         }
 
-        
+
 
     }
 }
