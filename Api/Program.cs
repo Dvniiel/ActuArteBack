@@ -68,11 +68,8 @@ builder.Services.AddScoped<IUsuariosRepository, UsuariosRepository>();
 builder.Services.AddScoped<AsientosService>();
 builder.Services.AddScoped<IAsientosRepository, AsientosRepository>();
 
-// CREDENTIALS
 builder.Services.AddScoped<CredentialsService>();
 builder.Services.AddScoped<ICredentialsRepository, CredentialsRepository>();
-
-
 
 var app = builder.Build();
 

@@ -22,16 +22,12 @@ namespace ActuArte.Controllers
         }
 
 
-        // PREGUNTAR POR QUE NO FUNCIONA
         [HttpPost("login")]
         public IActionResult Login([FromBody] UsuariosDTO usuariosDTO)
         {
             try
             {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest("Invalid login model");
-                }
+                _logger.LogInformation("Intentando logear usuario");
 
 
                 var usuario = _credentialsService.Authenticate(usuariosDTO);
@@ -50,6 +46,8 @@ namespace ActuArte.Controllers
                 return StatusCode(500, "Error interno del servidor");
             }
         }
+
+        
 
     }
 }
