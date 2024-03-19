@@ -18,15 +18,6 @@ public class Usuarios
     [Required]
     public string? passwordUsuario { get; set; }
 }
-    public class LoginModel
-    {
-         [Required]
-        public string? nombreUsuario { get; set; }
-
-        [Required]
-        public string? passwordUsuario { get; set; }
-    }
-
 
 }
 
