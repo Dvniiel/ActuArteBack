@@ -12,6 +12,8 @@ public class Usuarios
     [Key]
     public int idUsuario { get; set; }
 
+    public bool isAdmin{ get; set; }
+
     [Required]
     public string? nombreUsuario { get; set; }
 

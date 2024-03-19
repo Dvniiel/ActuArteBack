@@ -11,6 +11,9 @@ namespace ActuArte.Models
 
         [Required]
         public string? passwordUsuario { get; set; }
-        
+
+        public bool isAdmin { get; set; }
+
+
     }
 }

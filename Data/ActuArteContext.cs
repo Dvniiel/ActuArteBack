@@ -255,25 +255,29 @@ namespace ActuArte.Data
                 {
                     idUsuario = 1,
                     nombreUsuario = "admin",
-                    passwordUsuario = "admin"
+                    passwordUsuario = "admin",
+                    isAdmin = true
                 },
                 new Usuarios
                 {
                     idUsuario = 2,
                     nombreUsuario = "admin2",
-                    passwordUsuario = "admin"
+                    passwordUsuario = "admin",
+                    isAdmin = true
                 },
                 new Usuarios
                 {
                     idUsuario = 3,
                     nombreUsuario = "admin3",
-                    passwordUsuario = "admin"
+                    passwordUsuario = "admin",
+                    isAdmin = true
                 },
                 new Usuarios
                 {
                     idUsuario = 4,
                     nombreUsuario = "admin4",
-                    passwordUsuario = "admin"
+                    passwordUsuario = "admin",
+                    isAdmin = true
                 }
             );
 

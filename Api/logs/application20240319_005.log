@@ -797,3 +797,20 @@ WHERE [u].[nombreUsuario] = @__usuariosDTO_nombreUsuario_0 AND [u].[passwordUsua
 2024-03-19 19:18:49.962 +00:00 [INF] Executed action ActuArte.Controllers.AuthController.Login (ActuArte.Api) in 3.7673ms
 2024-03-19 19:18:49.962 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.AuthController.Login (ActuArte.Api)'
 2024-03-19 19:18:49.963 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8001/Auth/login application/json 61 - 200 - application/json;+charset=utf-8 6.5400ms
+2024-03-19 19:29:29.171 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/index.html - -
+2024-03-19 19:29:29.172 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/index.html - - - 200 - text/html;charset=utf-8 1.0369ms
+2024-03-19 19:29:29.181 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-bundle.js - -
+2024-03-19 19:29:29.181 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui.css - -
+2024-03-19 19:29:29.183 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-standalone-preset.js - -
+2024-03-19 19:29:29.183 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-19 19:29:29.184 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-19 19:29:29.184 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui.css - - - 200 144929 text/css 2.5706ms
+2024-03-19 19:29:29.184 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 2.7692ms
+2024-03-19 19:29:29.184 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-19 19:29:29.185 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 2.7088ms
+2024-03-19 19:29:29.605 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - -
+2024-03-19 19:29:29.611 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.7893ms
+2024-03-19 19:29:29.618 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8001/swagger/favicon-32x32.png - -
+2024-03-19 19:29:29.618 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-19 19:29:29.618 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8001/swagger/favicon-32x32.png - - - 200 628 image/png 0.8483ms
+2024-03-19 19:33:13.860 +00:00 [INF] Application is shutting down...

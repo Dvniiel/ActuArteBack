@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ActuArte.Data.Migrations
 {
     [DbContext(typeof(ActuArteContext))]
-    [Migration("20240319191329_InitialCreate")]
+    [Migration("20240319193323_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -612,6 +612,9 @@ namespace ActuArte.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idUsuario"));
 
+                    b.Property<bool>("isAdmin")
+                        .HasColumnType("bit");
+
                     b.Property<string>("nombreUsuario")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -628,24 +631,28 @@ namespace ActuArte.Data.Migrations
                         new
                         {
                             idUsuario = 1,
+                            isAdmin = true,
                             nombreUsuario = "admin",
                             passwordUsuario = "admin"
                         },
                         new
                         {
                             idUsuario = 2,
+                            isAdmin = true,
                             nombreUsuario = "admin2",
                             passwordUsuario = "admin"
                         },
                         new
                         {
                             idUsuario = 3,
+                            isAdmin = true,
                             nombreUsuario = "admin3",
                             passwordUsuario = "admin"
                         },
                         new
                         {
                             idUsuario = 4,
+                            isAdmin = true,
                             nombreUsuario = "admin4",
                             passwordUsuario = "admin"
                         });

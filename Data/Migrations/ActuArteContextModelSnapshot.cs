@@ -609,6 +609,9 @@ namespace ActuArte.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("idUsuario"));
 
+                    b.Property<bool>("isAdmin")
+                        .HasColumnType("bit");
+
                     b.Property<string>("nombreUsuario")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -625,24 +628,28 @@ namespace ActuArte.Data.Migrations
                         new
                         {
                             idUsuario = 1,
+                            isAdmin = true,
                             nombreUsuario = "admin",
                             passwordUsuario = "admin"
                         },
                         new
                         {
                             idUsuario = 2,
+                            isAdmin = true,
                             nombreUsuario = "admin2",
                             passwordUsuario = "admin"
                         },
                         new
                         {
                             idUsuario = 3,
+                            isAdmin = true,
                             nombreUsuario = "admin3",
                             passwordUsuario = "admin"
                         },
                         new
                         {
                             idUsuario = 4,
+                            isAdmin = true,
                             nombreUsuario = "admin4",
                             passwordUsuario = "admin"
                         });
