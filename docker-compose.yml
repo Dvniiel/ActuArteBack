@@ -35,6 +35,8 @@ services:
             - db
         environment:
             - DOCKER_CONTAINER=true
+        volumes:
+            -./Api/logs:app/logs
 
     #web:
     #    container_name: webContainer

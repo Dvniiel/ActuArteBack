@@ -27,6 +27,16 @@ builder.Services.AddCors(options =>
 });
 
 
+// CONFIG PARA EL LOGGER
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("logs/application.log", rollingInterval: RollingInterval.Day)
+    .WriteTo.Debug()
+    .CreateLogger();
+builder.Host.UseSerilog();
+
+
 
 var keyString = "ServerDB";
 var connectionString = builder.Configuration.GetConnectionString(keyString);
