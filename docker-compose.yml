@@ -25,7 +25,7 @@ services:
             - MSSQL_SA_PASSWORD=<YourStrong@Passw0rd>
     api:
         ports:
-            - 8001:80
+            - 8003:80
         networks:
             - backend
         build:

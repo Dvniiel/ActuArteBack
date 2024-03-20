@@ -26,6 +26,7 @@ namespace ActuArte.Data
         }
         public void Add(Usuarios usuarios)
         {
+            usuarios.isAdmin = false;
             _context.Usuarios.Add(usuarios);
             _context.SaveChanges();
         }
