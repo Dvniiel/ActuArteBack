@@ -10,7 +10,7 @@ namespace ActuArte.Business
 
         Usuarios? Get(int Id);
         void Update(Usuarios usuarios);
-        void Add(Usuarios usuarios);
+        
         void Delete(int id);
         
     }

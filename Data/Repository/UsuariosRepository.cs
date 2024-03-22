@@ -24,12 +24,7 @@ namespace ActuArte.Data
         {
             return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.idUsuario == id);
         }
-        public void Add(Usuarios usuarios)
-        {
-            usuarios.isAdmin = false;
-            _context.Usuarios.Add(usuarios);
-            _context.SaveChanges();
-        }
+        
 
         public void Update(Usuarios usuarios)
         {

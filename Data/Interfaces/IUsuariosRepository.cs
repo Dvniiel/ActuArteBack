@@ -7,7 +7,6 @@ namespace ActuArte.Data
     {
         List<Usuarios> GetAll();
         Usuarios Get(int Id);
-        void Add(Usuarios usuarios);
         void Delete(int Id);
 
         void Update(Usuarios usuarios);

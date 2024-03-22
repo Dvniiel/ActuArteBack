@@ -12,6 +12,9 @@ namespace ActuArte.Business
             _credentialsRepository = credentialsRepository;
         }
 
+        public Usuarios Get(int Id) => _credentialsRepository.Get(Id);
+        
+
         public Usuarios Authenticate(UsuariosDTO usuariosDTO)
         {
             
@@ -25,6 +28,8 @@ namespace ActuArte.Business
 
             return usuario; 
         }
+
+        public void Add(Usuarios usuarios) => _credentialsRepository.Add(usuarios);
 
     }
 }

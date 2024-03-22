@@ -74,33 +74,6 @@ namespace ActuArte.Controllers
             }
         }
 
-
-
-        [HttpPost]
-        public ActionResult<UsuariosDTO> Create(Usuarios usuario)
-        {
-            try
-            {
-                var existeUser = _usuarioService.Get(usuario.idUsuario);
-                if (existeUser != null)
-                {
-                    return BadRequest($"Una obra con el ID {usuario.idUsuario} ya existe.");
-                }
-
-                _usuarioService.Add(usuario);
-
-                _logger.LogInformation("Usuario posteado correctamente");
-                return CreatedAtAction(nameof(Create), new { Id = usuario.idUsuario }, usuario);
-            }
-            catch
-            {
-                _logger.LogError("Error al postear un Usuario");
-                return StatusCode(500, "Error interno del servidor");
-            }
-        }
-
-
-
         [HttpDelete("{Id}")]
         public IActionResult Delete(int Id)
         {

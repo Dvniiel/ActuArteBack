@@ -13,7 +13,7 @@ namespace ActuArte.Business
         }
         public List<Usuarios> GetAll() => _usuarioRepository.GetAll();
         public Usuarios Get(int Id) => _usuarioRepository.Get(Id);
-        public void Add(Usuarios usuarios) => _usuarioRepository.Add(usuarios);
+        
 
         public void Delete(int Id) => _usuarioRepository.Delete(Id);
 

@@ -7,5 +7,8 @@ namespace ActuArte.Business
     public interface ICredentialsService
     {
         Usuarios Authenticate(UsuariosDTO usuariosDTO);
+
+        void Add(Usuarios usuarios);
     }
+
 }

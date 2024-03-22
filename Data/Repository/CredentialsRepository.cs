@@ -14,9 +14,21 @@ namespace ActuArte.Data
             _context = context;
         }
 
+        public Usuarios Get(int id)
+        {
+            return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.idUsuario == id);
+        }
+        
+
         public Usuarios GetByUsername(UsuariosDTO usuariosDTO) 
         {
             return _context.Usuarios.AsNoTracking().FirstOrDefault(usuarios => usuarios.nombreUsuario == usuariosDTO.nombreUsuario && usuarios.passwordUsuario == usuariosDTO.passwordUsuario);
+        }
+        public void Add(Usuarios usuarios)
+        {
+            usuarios.isAdmin = false;
+            _context.Usuarios.Add(usuarios);
+            _context.SaveChanges();
         }
     }
 }
