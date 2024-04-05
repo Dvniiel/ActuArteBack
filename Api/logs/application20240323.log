@@ -1,0 +1,1038 @@
+2024-03-23 20:16:26.977 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed.
+2024-03-23 20:16:27.013 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-03-23 20:16:27.059 +00:00 [INF] Creating key {3b45cab4-0c17-4e37-b012-a4546c988534} with creation date 2024-03-23 20:16:27Z, activation date 2024-03-23 20:16:27Z, and expiration date 2024-06-21 20:16:27Z.
+2024-03-23 20:16:27.075 +00:00 [WRN] No XML encryptor configured. Key {3b45cab4-0c17-4e37-b012-a4546c988534} may be persisted to storage in unencrypted form.
+2024-03-23 20:16:27.078 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-3b45cab4-0c17-4e37-b012-a4546c988534.xml'.
+2024-03-23 20:16:27.125 +00:00 [INF] Now listening on: http://[::]:80
+2024-03-23 20:16:27.128 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-23 20:16:27.128 +00:00 [INF] Hosting environment: Production
+2024-03-23 20:16:27.129 +00:00 [INF] Content root path: /app
+2024-03-23 20:16:49.760 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:16:49.777 +00:00 [WRN] Failed to determine the https port for redirect.
+2024-03-23 20:16:49.799 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:16:49.802 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:16:49.816 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:16:50.438 +00:00 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:16:50.487 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:16:50.540 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 720.2988ms
+2024-03-23 20:16:50.541 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:16:50.547 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 788.4443ms
+2024-03-23 20:17:09.063 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:17:09.066 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:09.067 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:17:09.067 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:09.079 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:17:09.081 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:17:09.082 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 14.1909ms
+2024-03-23 20:17:09.083 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:17:09.084 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 21.3247ms
+2024-03-23 20:17:14.341 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:17:14.344 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:14.345 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:17:14.345 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:14.397 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:17:14.399 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:17:14.399 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 53.1716ms
+2024-03-23 20:17:14.400 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:17:14.401 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 60.1105ms
+2024-03-23 20:17:25.726 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:25.728 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:25.729 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:25.731 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - -
+2024-03-23 20:17:25.731 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - -
+2024-03-23 20:17:25.731 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:17:25.733 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:25.733 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:25.734 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:25.734 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:25.736 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:25.736 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:25.737 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:25.738 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:25.738 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:25.738 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:25.813 +00:00 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:25.815 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:25.816 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:25.816 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 78.5687ms
+2024-03-23 20:17:25.817 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:25.817 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 90.6142ms
+2024-03-23 20:17:25.819 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:25.819 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:25.820 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:25.820 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:25.823 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:25.823 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:25.823 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:25.824 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.4415ms
+2024-03-23 20:17:25.824 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:25.825 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 5.8946ms
+2024-03-23 20:17:25.875 +00:00 [INF] Executed DbCommand (67ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:25.876 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:25.877 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:25.877 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:25.877 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:25.878 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:25.879 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 140.3576ms
+2024-03-23 20:17:25.880 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:25.880 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 141.2154ms
+2024-03-23 20:17:25.880 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 149.4111ms
+2024-03-23 20:17:25.881 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:25.882 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 151.4146ms
+2024-03-23 20:17:25.883 +00:00 [INF] Executed DbCommand (70ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:25.884 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:25.884 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:25.885 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 146.1813ms
+2024-03-23 20:17:25.885 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:25.885 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - - - 200 - application/json;+charset=utf-8 154.4050ms
+2024-03-23 20:17:38.439 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:38.440 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:38.440 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:38.441 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:38.444 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:38.444 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:38.445 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:38.446 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.7377ms
+2024-03-23 20:17:38.446 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:38.446 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 7.3252ms
+2024-03-23 20:17:38.450 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - -
+2024-03-23 20:17:38.451 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:38.452 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:38.452 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:38.455 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:38.455 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:38.456 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:38.457 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.1064ms
+2024-03-23 20:17:38.457 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:38.459 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 8.2482ms
+2024-03-23 20:17:39.490 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:39.490 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:17:39.491 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - -
+2024-03-23 20:17:39.491 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - -
+2024-03-23 20:17:39.491 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:39.491 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:39.492 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:39.492 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:39.492 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:39.493 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:39.493 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:39.494 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:39.494 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:39.495 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:39.495 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:39.495 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:39.497 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:39.497 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:39.497 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:39.498 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:39.498 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:39.499 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:39.499 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:39.500 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:39.500 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:39.500 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:39.500 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:39.501 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:39.501 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.2071ms
+2024-03-23 20:17:39.501 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 5.9315ms
+2024-03-23 20:17:39.502 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.437ms
+2024-03-23 20:17:39.503 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:39.502 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.8803ms
+2024-03-23 20:17:39.502 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:39.503 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:39.503 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:39.504 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:39.504 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:39.504 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 13.8127ms
+2024-03-23 20:17:39.505 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 14.6505ms
+2024-03-23 20:17:39.505 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - - - 200 - application/json;+charset=utf-8 14.0339ms
+2024-03-23 20:17:39.505 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:39.506 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 14.8386ms
+2024-03-23 20:17:39.507 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:39.509 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:39.509 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:39.510 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:39.510 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 2.6057ms
+2024-03-23 20:17:39.510 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:39.511 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 7.7855ms
+2024-03-23 20:17:42.323 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:42.324 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:42.325 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:42.326 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:42.328 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:42.328 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:42.329 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:42.329 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.3595ms
+2024-03-23 20:17:42.330 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:42.331 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 7.7580ms
+2024-03-23 20:17:42.334 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:17:42.335 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:42.335 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:42.336 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:42.338 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:42.338 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:42.338 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:42.339 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 2.7801ms
+2024-03-23 20:17:42.339 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:42.339 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 5.1886ms
+2024-03-23 20:17:46.123 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Obras/1/Sesion/1 - -
+2024-03-23 20:17:46.123 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:46.126 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Obras/1/Sesion/1 - - - 204 - - 2.7891ms
+2024-03-23 20:17:46.128 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Obras/1/Sesion/1 application/json 5
+2024-03-23 20:17:46.128 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:46.129 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api)'
+2024-03-23 20:17:46.132 +00:00 [INF] Route matched with {action = "AddObra", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddObra(Int32, Int32, System.Collections.Generic.List`1[System.Int32]) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:46.736 +00:00 [INF] Executed DbCommand (502ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AsientosObrasDatos] ([idAsiento], [idObra], [idSesion])
+OUTPUT INSERTED.[idObjeto]
+VALUES (@p0, @p1, @p2);
+2024-03-23 20:17:46.747 +00:00 [INF] Los asientos han sido añadidos correctamente
+2024-03-23 20:17:46.748 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-23 20:17:46.749 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api) in 616.5815ms
+2024-03-23 20:17:46.749 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api)'
+2024-03-23 20:17:46.750 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Obras/1/Sesion/1 application/json 5 - 200 - text/plain;+charset=utf-8 622.4302ms
+2024-03-23 20:17:46.753 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:17:46.753 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:46.753 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:46.754 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:46.755 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:46.756 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:46.756 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:46.756 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 2.1912ms
+2024-03-23 20:17:46.757 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:46.757 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 4.2137ms
+2024-03-23 20:17:52.524 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:17:52.525 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:52.526 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:52.527 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:52.530 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:52.530 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:52.530 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:52.531 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.0231ms
+2024-03-23 20:17:52.532 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:52.533 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 9.1475ms
+2024-03-23 20:17:53.949 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:17:53.949 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:53.949 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - -
+2024-03-23 20:17:53.949 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - -
+2024-03-23 20:17:53.949 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:53.949 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:53.950 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:53.951 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:53.952 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:53.952 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:53.953 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:53.953 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:53.954 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:53.954 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:53.954 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:53.955 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:53.957 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:53.957 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:53.957 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:53.957 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:17:53.957 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:53.957 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:53.958 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:53.958 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:17:53.958 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:53.959 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:53.959 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:53.959 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:17:53.960 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.807ms
+2024-03-23 20:17:53.960 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.6292ms
+2024-03-23 20:17:53.961 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 5.3871ms
+2024-03-23 20:17:53.961 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.2855ms
+2024-03-23 20:17:53.962 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:53.962 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:17:53.962 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:53.963 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:53.963 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:17:53.964 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 15.4359ms
+2024-03-23 20:17:53.966 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:17:53.966 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - - - 200 - application/json;+charset=utf-8 17.3125ms
+2024-03-23 20:17:53.966 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 17.8871ms
+2024-03-23 20:17:53.967 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 18.1887ms
+2024-03-23 20:17:53.968 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:53.970 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:17:53.973 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:17:53.973 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:17:53.974 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:17:53.974 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.6508ms
+2024-03-23 20:17:53.975 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:17:53.975 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 13.3052ms
+2024-03-23 20:18:03.812 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/register - -
+2024-03-23 20:18:03.813 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:03.813 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/register - - - 204 - - 1.7175ms
+2024-03-23 20:18:03.815 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Credenciales/register application/json 72
+2024-03-23 20:18:03.817 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:03.817 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.CredencialesController.Create (ActuArte.Api)'
+2024-03-23 20:18:03.819 +00:00 [INF] Route matched with {action = "Create", controller = "Credenciales"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.UsuariosDTO] Create(ActuArte.Models.Usuarios) on controller ActuArte.Controllers.CredencialesController (ActuArte.Api).
+2024-03-23 20:18:03.878 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[idUsuario], [u].[isAdmin], [u].[nombreUsuario], [u].[passwordUsuario]
+FROM [Usuarios] AS [u]
+WHERE [u].[idUsuario] = @__id_0
+2024-03-23 20:18:03.894 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 4000), @p2='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Usuarios] ([isAdmin], [nombreUsuario], [passwordUsuario])
+OUTPUT INSERTED.[idUsuario]
+VALUES (@p0, @p1, @p2);
+2024-03-23 20:18:03.895 +00:00 [INF] Usuario posteado correctamente
+2024-03-23 20:18:03.896 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'ActuArte.Models.Usuarios'.
+2024-03-23 20:18:03.911 +00:00 [INF] Executed action ActuArte.Controllers.CredencialesController.Create (ActuArte.Api) in 91.8567ms
+2024-03-23 20:18:03.911 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.CredencialesController.Create (ActuArte.Api)'
+2024-03-23 20:18:03.912 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Credenciales/register application/json 72 - 201 - application/json;+charset=utf-8 96.2164ms
+2024-03-23 20:18:03.952 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:18:03.952 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:03.953 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:03.954 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:03.956 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:18:03.956 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:18:03.957 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.9555ms
+2024-03-23 20:18:03.957 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:03.958 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 6.0344ms
+2024-03-23 20:18:12.292 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/login - -
+2024-03-23 20:18:12.293 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:12.294 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/login - - - 204 - - 1.5580ms
+2024-03-23 20:18:12.296 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Credenciales/login application/json 51
+2024-03-23 20:18:12.297 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:12.297 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.CredencialesController.Login (ActuArte.Api)'
+2024-03-23 20:18:12.299 +00:00 [INF] Route matched with {action = "Login", controller = "Credenciales"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ActuArte.Models.UsuariosDTO) on controller ActuArte.Controllers.CredencialesController (ActuArte.Api).
+2024-03-23 20:18:12.343 +00:00 [INF] Intentando logear usuario
+2024-03-23 20:18:12.349 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__usuariosDTO_nombreUsuario_0='?' (Size = 4000), @__usuariosDTO_passwordUsuario_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[idUsuario], [u].[isAdmin], [u].[nombreUsuario], [u].[passwordUsuario]
+FROM [Usuarios] AS [u]
+WHERE [u].[nombreUsuario] = @__usuariosDTO_nombreUsuario_0 AND [u].[passwordUsuario] = @__usuariosDTO_passwordUsuario_1
+2024-03-23 20:18:12.350 +00:00 [INF] Usuario correcto
+2024-03-23 20:18:12.350 +00:00 [INF] Executing OkObjectResult, writing value of type 'ActuArte.Models.Usuarios'.
+2024-03-23 20:18:12.351 +00:00 [INF] Executed action ActuArte.Controllers.CredencialesController.Login (ActuArte.Api) in 51.3324ms
+2024-03-23 20:18:12.351 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.CredencialesController.Login (ActuArte.Api)'
+2024-03-23 20:18:12.352 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Credenciales/login application/json 51 - 200 - application/json;+charset=utf-8 55.4971ms
+2024-03-23 20:18:12.389 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:18:12.390 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:12.390 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:12.391 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:12.392 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:18:12.393 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:18:12.394 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.5444ms
+2024-03-23 20:18:12.394 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:12.394 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.3276ms
+2024-03-23 20:18:21.144 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Obras/16 - -
+2024-03-23 20:18:21.144 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:21.145 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Obras/16 - - - 204 - - 1.4017ms
+2024-03-23 20:18:21.148 +00:00 [INF] Request starting HTTP/1.1 PUT http://localhost:8003/Obras/16 application/json 606
+2024-03-23 20:18:21.149 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:21.149 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Update (ActuArte.Api)'
+2024-03-23 20:18:21.151 +00:00 [INF] Route matched with {action = "Update", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Update(Int32, ActuArte.Models.Obras) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:21.203 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:18:21.217 +00:00 [INF] Executed DbCommand (7ms) [Parameters=[@p10='?' (DbType = Int32), @p0='?' (DbType = Boolean), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Obras] SET [aclamadas] = @p0, [autorObra] = @p1, [descObra] = @p2, [directorObra] = @p3, [duracionObra] = @p4, [imagen] = @p5, [nombreObra] = @p6, [recientes] = @p7, [ultimasSesiones] = @p8, [valoracionObra] = @p9
+OUTPUT 1
+WHERE [idObra] = @p10;
+2024-03-23 20:18:21.218 +00:00 [INF] Put de Obra por id correcto
+2024-03-23 20:18:21.220 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-03-23 20:18:21.220 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Update (ActuArte.Api) in 68.3979ms
+2024-03-23 20:18:21.220 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Update (ActuArte.Api)'
+2024-03-23 20:18:21.221 +00:00 [INF] Request finished HTTP/1.1 PUT http://localhost:8003/Obras/16 application/json 606 - 204 - - 72.3522ms
+2024-03-23 20:18:21.224 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:18:21.224 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:21.225 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:21.225 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:21.227 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:18:21.227 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:18:21.228 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.1001ms
+2024-03-23 20:18:21.228 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:21.228 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 4.3795ms
+2024-03-23 20:18:21.232 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:18:21.232 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:21.232 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:21.233 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:21.236 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:18:21.236 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:18:21.237 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 3.2489ms
+2024-03-23 20:18:21.237 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:21.237 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.8778ms
+2024-03-23 20:18:24.341 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:18:24.342 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:24.343 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:24.343 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:24.346 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:18:24.347 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:18:24.348 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 3.9341ms
+2024-03-23 20:18:24.349 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:24.349 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 8.4030ms
+2024-03-23 20:18:27.336 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:18:27.337 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:27.337 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:27.338 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:27.340 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:18:27.340 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:18:27.341 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.4882ms
+2024-03-23 20:18:27.341 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:18:27.342 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.6712ms
+2024-03-23 20:18:29.298 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/16 - -
+2024-03-23 20:18:29.298 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:29.299 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:18:29.299 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/16/Session?sessionId=2 - -
+2024-03-23 20:18:29.300 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/16/Session?sessionId=1 - -
+2024-03-23 20:18:29.300 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/16/Session?sessionId=3 - -
+2024-03-23 20:18:29.300 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:29.300 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:29.301 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:29.301 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:29.301 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:18:29.302 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:18:29.302 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:18:29.303 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:29.303 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:29.303 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:18:29.303 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:29.304 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:18:29.305 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:18:29.305 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:18:29.305 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:18:29.305 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:18:29.306 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:18:29.306 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:18:29.306 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 5.0234ms
+2024-03-23 20:18:29.306 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:18:29.307 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:18:29.307 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:18:29.308 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:18:29.308 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/16 - -
+2024-03-23 20:18:29.308 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.2291ms
+2024-03-23 20:18:29.308 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:18:29.309 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.4354ms
+2024-03-23 20:18:29.309 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/16 - - - 200 - application/json;+charset=utf-8 11.6170ms
+2024-03-23 20:18:29.310 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:29.310 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:18:29.310 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.7107ms
+2024-03-23 20:18:29.311 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:18:29.311 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:18:29.311 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/16/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 11.9080ms
+2024-03-23 20:18:29.312 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:18:29.312 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/16/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 12.6876ms
+2024-03-23 20:18:29.312 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:18:29.313 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/16/Session?sessionId=3 - - - 200 - application/json;+charset=utf-8 13.1000ms
+2024-03-23 20:18:29.315 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:18:29.316 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:18:29.317 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:18:29.317 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.5395ms
+2024-03-23 20:18:29.318 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:18:29.318 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/16 - - - 200 - application/json;+charset=utf-8 10.3297ms
+2024-03-23 20:18:35.359 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/login - -
+2024-03-23 20:18:35.360 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:35.360 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/login - - - 204 - - 1.3208ms
+2024-03-23 20:18:35.363 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Credenciales/login application/json 51
+2024-03-23 20:18:35.363 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:18:35.364 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.CredencialesController.Login (ActuArte.Api)'
+2024-03-23 20:18:35.364 +00:00 [INF] Route matched with {action = "Login", controller = "Credenciales"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ActuArte.Models.UsuariosDTO) on controller ActuArte.Controllers.CredencialesController (ActuArte.Api).
+2024-03-23 20:18:35.415 +00:00 [INF] Intentando logear usuario
+2024-03-23 20:18:35.419 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__usuariosDTO_nombreUsuario_0='?' (Size = 4000), @__usuariosDTO_passwordUsuario_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[idUsuario], [u].[isAdmin], [u].[nombreUsuario], [u].[passwordUsuario]
+FROM [Usuarios] AS [u]
+WHERE [u].[nombreUsuario] = @__usuariosDTO_nombreUsuario_0 AND [u].[passwordUsuario] = @__usuariosDTO_passwordUsuario_1
+2024-03-23 20:18:35.420 +00:00 [INF] Usuario correcto
+2024-03-23 20:18:35.421 +00:00 [INF] Executing OkObjectResult, writing value of type 'ActuArte.Models.Usuarios'.
+2024-03-23 20:18:35.423 +00:00 [INF] Executed action ActuArte.Controllers.CredencialesController.Login (ActuArte.Api) in 57.9554ms
+2024-03-23 20:18:35.424 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.CredencialesController.Login (ActuArte.Api)'
+2024-03-23 20:18:35.427 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Credenciales/login application/json 51 - 200 - application/json;+charset=utf-8 63.9782ms
+2024-03-23 20:19:14.995 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Obras - -
+2024-03-23 20:19:14.996 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:14.996 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Obras - - - 204 - - 1.0422ms
+2024-03-23 20:19:14.998 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Obras application/json 267
+2024-03-23 20:19:14.998 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:14.998 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Create (ActuArte.Api)'
+2024-03-23 20:19:15.000 +00:00 [INF] Route matched with {action = "Create", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Create(ActuArte.Models.Obras) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:15.045 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:15.046 +00:00 [INF] Posteada una Obra
+2024-03-23 20:19:15.073 +00:00 [INF] Executed DbCommand (24ms) [Parameters=[@p0='?' (DbType = Boolean), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Obras] ([aclamadas], [autorObra], [descObra], [directorObra], [duracionObra], [imagen], [nombreObra], [recientes], [ultimasSesiones], [valoracionObra])
+OUTPUT INSERTED.[idObra]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9);
+2024-03-23 20:19:15.076 +00:00 [INF] Executing CreatedAtActionResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:19:15.078 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Create (ActuArte.Api) in 77.5474ms
+2024-03-23 20:19:15.078 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Create (ActuArte.Api)'
+2024-03-23 20:19:15.081 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Obras application/json 267 - 201 - application/json;+charset=utf-8 83.2702ms
+2024-03-23 20:19:15.091 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:15.091 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:15.092 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:15.092 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:15.094 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:15.094 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:15.095 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.0738ms
+2024-03-23 20:19:15.095 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:15.095 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 4.6208ms
+2024-03-23 20:19:15.186 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:15.186 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:15.187 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:15.188 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:15.190 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:15.190 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:15.191 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.6374ms
+2024-03-23 20:19:15.191 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:15.192 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 6.2172ms
+2024-03-23 20:19:19.311 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:19.312 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:19.313 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:19.313 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:19.316 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:19.317 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:19.317 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 3.009ms
+2024-03-23 20:19:19.317 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:19.318 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 7.2851ms
+2024-03-23 20:19:21.811 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:21.811 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:21.812 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:21.813 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:21.816 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:21.817 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:21.818 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 4.6915ms
+2024-03-23 20:19:21.819 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:21.820 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 9.2906ms
+2024-03-23 20:19:26.246 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:26.246 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:26.247 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:26.247 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:26.249 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:26.250 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:26.251 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.7715ms
+2024-03-23 20:19:26.251 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:26.251 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.6611ms
+2024-03-23 20:19:28.375 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1001 - -
+2024-03-23 20:19:28.376 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:28.376 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1001/Session?sessionId=3 - -
+2024-03-23 20:19:28.376 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1001/Session?sessionId=1 - -
+2024-03-23 20:19:28.377 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1001/Session?sessionId=2 - -
+2024-03-23 20:19:28.377 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:28.377 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:28.378 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:28.378 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:28.379 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:28.378 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:28.378 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:28.379 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:28.379 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:28.380 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:28.380 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:28.382 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:28.382 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:28.382 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:28.382 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:28.382 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:28.382 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:19:28.383 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:28.383 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:28.383 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:28.383 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:19:28.384 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:28.384 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:28.384 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 3.9516ms
+2024-03-23 20:19:28.385 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 4.7768ms
+2024-03-23 20:19:28.385 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.0581ms
+2024-03-23 20:19:28.385 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.7389ms
+2024-03-23 20:19:28.385 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:28.386 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:28.386 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:28.386 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1001 - -
+2024-03-23 20:19:28.386 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:28.387 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1001/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 10.2050ms
+2024-03-23 20:19:28.387 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1001 - - - 200 - application/json;+charset=utf-8 11.5142ms
+2024-03-23 20:19:28.387 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1001/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 10.5657ms
+2024-03-23 20:19:28.388 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:28.388 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1001/Session?sessionId=3 - - - 200 - application/json;+charset=utf-8 11.5317ms
+2024-03-23 20:19:28.389 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:28.389 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:28.391 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:28.392 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:19:28.392 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:19:28.392 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 2.4805ms
+2024-03-23 20:19:28.393 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:28.393 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1001 - - - 200 - application/json;+charset=utf-8 6.8676ms
+2024-03-23 20:19:33.187 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/login - -
+2024-03-23 20:19:33.188 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:33.189 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Credenciales/login - - - 204 - - 1.5543ms
+2024-03-23 20:19:33.191 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Credenciales/login application/json 51
+2024-03-23 20:19:33.192 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:33.192 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.CredencialesController.Login (ActuArte.Api)'
+2024-03-23 20:19:33.193 +00:00 [INF] Route matched with {action = "Login", controller = "Credenciales"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(ActuArte.Models.UsuariosDTO) on controller ActuArte.Controllers.CredencialesController (ActuArte.Api).
+2024-03-23 20:19:33.243 +00:00 [INF] Intentando logear usuario
+2024-03-23 20:19:33.250 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__usuariosDTO_nombreUsuario_0='?' (Size = 4000), @__usuariosDTO_passwordUsuario_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[idUsuario], [u].[isAdmin], [u].[nombreUsuario], [u].[passwordUsuario]
+FROM [Usuarios] AS [u]
+WHERE [u].[nombreUsuario] = @__usuariosDTO_nombreUsuario_0 AND [u].[passwordUsuario] = @__usuariosDTO_passwordUsuario_1
+2024-03-23 20:19:33.251 +00:00 [INF] Usuario correcto
+2024-03-23 20:19:33.253 +00:00 [INF] Executing OkObjectResult, writing value of type 'ActuArte.Models.Usuarios'.
+2024-03-23 20:19:33.255 +00:00 [INF] Executed action ActuArte.Controllers.CredencialesController.Login (ActuArte.Api) in 61.0633ms
+2024-03-23 20:19:33.257 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.CredencialesController.Login (ActuArte.Api)'
+2024-03-23 20:19:33.259 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Credenciales/login application/json 51 - 200 - application/json;+charset=utf-8 67.6082ms
+2024-03-23 20:19:33.301 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:33.302 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:33.302 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:33.302 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:33.304 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:33.305 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:33.305 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.3843ms
+2024-03-23 20:19:33.305 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:33.306 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 4.9564ms
+2024-03-23 20:19:34.892 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Obras/1001 - -
+2024-03-23 20:19:34.893 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:34.893 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Obras/1001 - - - 204 - - 1.1126ms
+2024-03-23 20:19:34.896 +00:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:8003/Obras/1001 - -
+2024-03-23 20:19:34.896 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:34.897 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Delete (ActuArte.Api)'
+2024-03-23 20:19:34.898 +00:00 [INF] Route matched with {action = "Delete", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Delete(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:34.901 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:34.911 +00:00 [INF] Executed DbCommand (2ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Obras] AS [o]
+        WHERE [o].[idObra] = @__Id_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2024-03-23 20:19:34.915 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__Id_0
+2024-03-23 20:19:34.922 +00:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Obras]
+OUTPUT 1
+WHERE [idObra] = @p0;
+2024-03-23 20:19:34.923 +00:00 [INF] Obra eliminada correctamente
+2024-03-23 20:19:34.924 +00:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-03-23 20:19:34.924 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Delete (ActuArte.Api) in 25.09ms
+2024-03-23 20:19:34.924 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Delete (ActuArte.Api)'
+2024-03-23 20:19:34.925 +00:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:8003/Obras/1001 - - - 204 - - 29.2135ms
+2024-03-23 20:19:34.927 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:34.928 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:34.928 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:34.928 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:34.929 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:34.930 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:34.930 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 1.7584ms
+2024-03-23 20:19:34.930 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:34.931 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 3.6733ms
+2024-03-23 20:19:36.387 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:36.388 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:36.389 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:36.390 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:36.392 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:36.393 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:36.394 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 3.0673ms
+2024-03-23 20:19:36.394 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:36.395 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 7.6976ms
+2024-03-23 20:19:38.475 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:38.475 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:38.476 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:38.476 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:38.478 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:38.479 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:38.479 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.5184ms
+2024-03-23 20:19:38.480 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:38.480 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.6005ms
+2024-03-23 20:19:46.975 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:46.976 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:46.976 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:46.977 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:46.978 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:46.979 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:46.980 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.8566ms
+2024-03-23 20:19:46.980 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:46.981 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.5151ms
+2024-03-23 20:19:53.645 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:19:53.646 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:53.646 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:53.647 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:53.649 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:19:53.650 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:19:53.651 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 3.1503ms
+2024-03-23 20:19:53.651 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:19:53.652 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 6.9431ms
+2024-03-23 20:19:57.456 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:19:57.457 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:19:57.457 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:57.457 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - -
+2024-03-23 20:19:57.458 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - -
+2024-03-23 20:19:57.458 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:57.458 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:57.459 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:57.459 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:57.459 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:57.460 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:57.460 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:57.460 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:57.461 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:57.461 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:57.462 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:57.463 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:57.463 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:19:57.463 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:57.463 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:57.464 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:19:57.464 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:57.465 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.9734ms
+2024-03-23 20:19:57.464 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:57.464 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:57.465 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:57.465 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:57.466 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:57.466 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:57.466 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:57.466 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:19:57.467 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 10.3597ms
+2024-03-23 20:19:57.467 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.5845ms
+2024-03-23 20:19:57.467 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.3514ms
+2024-03-23 20:19:57.468 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 5.0305ms
+2024-03-23 20:19:57.468 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:57.469 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:57.469 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:57.469 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:57.469 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:57.470 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=3 - - - 200 - application/json;+charset=utf-8 12.3551ms
+2024-03-23 20:19:57.471 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:57.470 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=2 - - - 200 - application/json;+charset=utf-8 12.7657ms
+2024-03-23 20:19:57.470 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 12.9357ms
+2024-03-23 20:19:57.473 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:57.473 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:19:57.474 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:19:57.474 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 2.9574ms
+2024-03-23 20:19:57.474 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:57.475 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 8.3608ms
+2024-03-23 20:19:58.683 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1 - -
+2024-03-23 20:19:58.684 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:58.684 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:58.685 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:58.686 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:19:58.687 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:19:58.687 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:19:58.687 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 2.1938ms
+2024-03-23 20:19:58.688 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:19:58.688 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1 - - - 200 - application/json;+charset=utf-8 4.7831ms
+2024-03-23 20:19:58.690 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:19:58.691 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:19:58.691 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:58.691 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:19:58.693 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:19:58.693 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:19:58.693 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:19:58.693 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 2.0308ms
+2024-03-23 20:19:58.694 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:19:58.694 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 3.6258ms
+2024-03-23 20:20:00.781 +00:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:8003/Obras/1/Sesion/1 - -
+2024-03-23 20:20:00.782 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:20:00.782 +00:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:8003/Obras/1/Sesion/1 - - - 204 - - 1.3794ms
+2024-03-23 20:20:00.784 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Obras/1/Sesion/1 application/json 5
+2024-03-23 20:20:00.785 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:20:00.785 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api)'
+2024-03-23 20:20:00.786 +00:00 [INF] Route matched with {action = "AddObra", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddObra(Int32, Int32, System.Collections.Generic.List`1[System.Int32]) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:20:00.854 +00:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AsientosObrasDatos] ([idAsiento], [idObra], [idSesion])
+OUTPUT INSERTED.[idObjeto]
+VALUES (@p0, @p1, @p2);
+2024-03-23 20:20:00.856 +00:00 [INF] Los asientos han sido añadidos correctamente
+2024-03-23 20:20:00.858 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-23 20:20:00.863 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api) in 76.4019ms
+2024-03-23 20:20:00.865 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api)'
+2024-03-23 20:20:00.868 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Obras/1/Sesion/1 application/json 5 - 200 - text/plain;+charset=utf-8 83.5456ms
+2024-03-23 20:20:00.875 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:20:00.875 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:20:00.876 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:20:00.877 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:20:00.882 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:20:00.882 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:20:00.882 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:20:00.883 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 4.6605ms
+2024-03-23 20:20:00.884 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:20:00.884 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 9.2271ms
+2024-03-23 20:20:04.096 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - -
+2024-03-23 20:20:04.097 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:20:04.097 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:20:04.098 +00:00 [INF] Route matched with {action = "GetAsientos", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetAsientos(Int32, Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:20:04.100 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__obraId_0='?' (DbType = Int32), @__sesionId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[idAsiento]
+FROM [AsientosObrasDatos] AS [a]
+WHERE [a].[idObra] = @__obraId_0 AND [a].[idSesion] = @__sesionId_1
+2024-03-23 20:20:04.101 +00:00 [INF] Recogiendo los asientos ocupados
+2024-03-23 20:20:04.102 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-03-23 20:20:04.102 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api) in 3.6298ms
+2024-03-23 20:20:04.103 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAsientos (ActuArte.Api)'
+2024-03-23 20:20:04.103 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/1/Session?sessionId=1 - - - 200 - application/json;+charset=utf-8 7.0605ms
+2024-03-23 20:20:56.242 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:20:56.243 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:20:56.244 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:20:56.244 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:20:56.246 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:20:56.247 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:20:56.248 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 2.8767ms
+2024-03-23 20:20:56.248 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:20:56.248 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 6.2239ms
+2024-03-23 20:21:27.434 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2024-03-23 20:21:27.462 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 28.8211ms
+2024-03-23 20:21:27.625 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2024-03-23 20:21:27.677 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 52.3985ms
+2024-03-23 20:21:43.128 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:21:43.129 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:21:43.129 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:21:43.131 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:21:43.132 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:21:43.133 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 3.2717ms
+2024-03-23 20:21:43.133 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:21:43.134 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 5.4857ms
+2024-03-23 20:22:02.440 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras/3 - -
+2024-03-23 20:22:02.441 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:22:02.441 +00:00 [INF] Route matched with {action = "Get", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[ActuArte.Models.Obras] Get(Int32) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:22:02.443 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+WHERE [o].[idObra] = @__id_0
+2024-03-23 20:22:02.444 +00:00 [INF] Obteniendo obra por ID
+2024-03-23 20:22:02.445 +00:00 [INF] Executing ObjectResult, writing value of type 'ActuArte.Models.Obras'.
+2024-03-23 20:22:02.445 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.Get (ActuArte.Api) in 3.8319ms
+2024-03-23 20:22:02.446 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.Get (ActuArte.Api)'
+2024-03-23 20:22:02.446 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras/3 - - - 200 - application/json;+charset=utf-8 5.7486ms
+2024-03-23 20:22:21.285 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:8003/Obras/1/Sesion/1 application/json 7
+2024-03-23 20:22:21.286 +00:00 [INF] CORS policy execution failed.
+2024-03-23 20:22:21.287 +00:00 [INF] Request origin http://localhost:8003 does not have permission to access the resource.
+2024-03-23 20:22:21.287 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api)'
+2024-03-23 20:22:21.287 +00:00 [INF] Route matched with {action = "AddObra", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddObra(Int32, Int32, System.Collections.Generic.List`1[System.Int32]) on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:22:21.345 +00:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AsientosObrasDatos] ([idAsiento], [idObra], [idSesion])
+OUTPUT INSERTED.[idObjeto]
+VALUES (@p0, @p1, @p2);
+2024-03-23 20:22:21.346 +00:00 [INF] Los asientos han sido añadidos correctamente
+2024-03-23 20:22:21.346 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-03-23 20:22:21.347 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api) in 58.8381ms
+2024-03-23 20:22:21.347 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.AddObra (ActuArte.Api)'
+2024-03-23 20:22:21.348 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:8003/Obras/1/Sesion/1 application/json 7 - 200 - text/plain;+charset=utf-8 62.0550ms
+2024-03-23 20:22:29.011 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Usuarios - -
+2024-03-23 20:22:29.011 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.UsuariosController.GetAll (ActuArte.Api)'
+2024-03-23 20:22:29.013 +00:00 [INF] Route matched with {action = "GetAll", controller = "Usuarios"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Usuarios]] GetAll() on controller ActuArte.Controllers.UsuariosController (ActuArte.Api).
+2024-03-23 20:22:29.017 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[idUsuario], [u].[isAdmin], [u].[nombreUsuario], [u].[passwordUsuario]
+FROM [Usuarios] AS [u]
+2024-03-23 20:22:29.018 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Usuarios, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:22:29.019 +00:00 [INF] Executed action ActuArte.Controllers.UsuariosController.GetAll (ActuArte.Api) in 5.3423ms
+2024-03-23 20:22:29.019 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.UsuariosController.GetAll (ActuArte.Api)'
+2024-03-23 20:22:29.019 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Usuarios - - - 200 - application/json;+charset=utf-8 8.2934ms
+2024-03-23 20:22:38.589 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/index.html - -
+2024-03-23 20:22:38.590 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/index.html - - - 200 - text/html;charset=utf-8 1.4451ms
+2024-03-23 20:22:38.608 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/swagger-ui.css - -
+2024-03-23 20:22:38.608 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/swagger-ui-bundle.js - -
+2024-03-23 20:22:38.610 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/swagger-ui-standalone-preset.js - -
+2024-03-23 20:22:38.621 +00:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-23 20:22:38.621 +00:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-23 20:22:38.621 +00:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-23 20:22:38.622 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 12.8521ms
+2024-03-23 20:22:38.623 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 14.5656ms
+2024-03-23 20:22:38.623 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/swagger-ui.css - - - 200 144929 text/css 15.0394ms
+2024-03-23 20:22:38.721 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - -
+2024-03-23 20:22:38.725 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.9011ms
+2024-03-23 20:22:38.730 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/swagger/favicon-32x32.png - -
+2024-03-23 20:22:38.731 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-23 20:22:38.731 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/swagger/favicon-32x32.png - - - 200 628 image/png 1.2143ms
+2024-03-23 20:22:44.065 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 20:22:44.066 +00:00 [INF] CORS policy execution successful.
+2024-03-23 20:22:44.067 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:22:44.068 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 20:22:44.070 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 20:22:44.072 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 20:22:44.073 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 5.091ms
+2024-03-23 20:22:44.074 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 20:22:44.075 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 9.7521ms
+2024-03-23 23:09:47.575 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:8003/Obras - -
+2024-03-23 23:09:47.577 +00:00 [INF] CORS policy execution successful.
+2024-03-23 23:09:47.578 +00:00 [INF] Executing endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 23:09:47.582 +00:00 [INF] Route matched with {action = "GetAll", controller = "Obras"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[ActuArte.Models.Obras]] GetAll() on controller ActuArte.Controllers.ObrasController (ActuArte.Api).
+2024-03-23 23:09:47.622 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[idObra], [o].[aclamadas], [o].[autorObra], [o].[descObra], [o].[directorObra], [o].[duracionObra], [o].[imagen], [o].[nombreObra], [o].[recientes], [o].[ultimasSesiones], [o].[valoracionObra]
+FROM [Obras] AS [o]
+2024-03-23 23:09:47.623 +00:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[ActuArte.Models.Obras, ActuArte.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-03-23 23:09:47.623 +00:00 [INF] Executed action ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api) in 39.8674ms
+2024-03-23 23:09:47.624 +00:00 [INF] Executed endpoint 'ActuArte.Controllers.ObrasController.GetAll (ActuArte.Api)'
+2024-03-23 23:09:47.624 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:8003/Obras - - - 200 - application/json;+charset=utf-8 49.0159ms
