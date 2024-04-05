@@ -24,25 +24,20 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
 
-// Configuración de CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy(name: "AllowVueApp",
-                      policy =>
-                      {
-                          policy.WithOrigins("http://localhost:5173")
-                                .AllowAnyHeader()
-                                .AllowAnyMethod();
-                      });
+    options.AddPolicy("MyCorsPolicy",
+        policy => policy
+            .WithOrigins("*") // Permite solicitudes de cualquier origen
+            .AllowAnyMethod() // Permite todos los métodos HTTP
+            .AllowAnyHeader()); // Permite todas las cabeceras HTTP
 });
 
 
 
 
 
-
-var isRunningInDocker = Environment.GetEnvironmentVariable("DOCKER_CONTAINER") == "true";
-var keyString = isRunningInDocker ? "ServerDB_Docker" : "ServerDB_Local";
+var keyString = "ServerDB";
 var connectionString = builder.Configuration.GetConnectionString(keyString);
 
 builder.Services.AddDbContext<ActuArteContext>(options =>
@@ -95,7 +90,7 @@ app.MapControllers();
 
 
 // Uso de CORS con la política definida
-app.UseCors("AllowVueApp");
+app.UseCors("MyCorsPolicy");
 
 app.MapControllerRoute(
     name: "default",
